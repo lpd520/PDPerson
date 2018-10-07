@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0487B8122169AC79001D797D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8112169AC79001D797D /* AppDelegate.m */; };
-		0487B8152169AC79001D797D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8142169AC79001D797D /* ViewController.m */; };
 		0487B8182169AC79001D797D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8162169AC79001D797D /* Main.storyboard */; };
 		0487B81A2169AC79001D797D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8192169AC79001D797D /* Assets.xcassets */; };
 		0487B81D2169AC79001D797D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487B81B2169AC79001D797D /* LaunchScreen.storyboard */; };
 		0487B8202169AC79001D797D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B81F2169AC79001D797D /* main.m */; };
 		0487B82A2169AC7A001D797D /* PDPersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8292169AC7A001D797D /* PDPersonTests.m */; };
+		0487B83E2169EB75001D797D /* PDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B83D2169EB75001D797D /* PDViewController.m */; };
+		0487B8422169F185001D797D /* PDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8412169F185001D797D /* PDNavigationController.m */; };
+		0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8452169F3B1001D797D /* PDCachesManager.m */; };
+		0487B8492169F48C001D797D /* PDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8482169F48C001D797D /* PDConst.m */; };
+		0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B84A2169F561001D797D /* SVProgressHUD+PD.m */; };
+		0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B84E2169FA97001D797D /* PDTabBarController.m */; };
+		0487B852216A0153001D797D /* PDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B851216A0153001D797D /* PDTableViewController.m */; };
+		0487B855216A06DE001D797D /* PDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B854216A06DE001D797D /* PDHomeVC.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 /* End PBXBuildFile section */
@@ -32,8 +39,6 @@
 		0487B80D2169AC79001D797D /* PDPerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDPerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0487B8102169AC79001D797D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0487B8112169AC79001D797D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0487B8132169AC79001D797D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0487B8142169AC79001D797D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0487B8172169AC79001D797D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0487B8192169AC79001D797D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0487B81C2169AC79001D797D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,23 @@
 		0487B8252169AC7A001D797D /* PDPersonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDPersonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0487B8292169AC7A001D797D /* PDPersonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDPersonTests.m; sourceTree = "<group>"; };
 		0487B82B2169AC7A001D797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0487B83C2169EB75001D797D /* PDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDViewController.h; sourceTree = "<group>"; };
+		0487B83D2169EB75001D797D /* PDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDViewController.m; sourceTree = "<group>"; };
+		0487B8402169F185001D797D /* PDNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDNavigationController.h; sourceTree = "<group>"; };
+		0487B8412169F185001D797D /* PDNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDNavigationController.m; sourceTree = "<group>"; };
+		0487B8432169F2A5001D797D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0487B8442169F3B1001D797D /* PDCachesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCachesManager.h; sourceTree = "<group>"; };
+		0487B8452169F3B1001D797D /* PDCachesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCachesManager.m; sourceTree = "<group>"; };
+		0487B8472169F48C001D797D /* PDConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDConst.h; sourceTree = "<group>"; };
+		0487B8482169F48C001D797D /* PDConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDConst.m; sourceTree = "<group>"; };
+		0487B84A2169F561001D797D /* SVProgressHUD+PD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+PD.m"; sourceTree = "<group>"; };
+		0487B84B2169F561001D797D /* SVProgressHUD+PD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+PD.h"; sourceTree = "<group>"; };
+		0487B84D2169FA97001D797D /* PDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTabBarController.h; sourceTree = "<group>"; };
+		0487B84E2169FA97001D797D /* PDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTabBarController.m; sourceTree = "<group>"; };
+		0487B850216A0153001D797D /* PDTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDTableViewController.h; sourceTree = "<group>"; };
+		0487B851216A0153001D797D /* PDTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTableViewController.m; sourceTree = "<group>"; };
+		0487B853216A06DE001D797D /* PDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHomeVC.h; sourceTree = "<group>"; };
+		0487B854216A06DE001D797D /* PDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHomeVC.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,10 +115,15 @@
 		0487B80F2169AC79001D797D /* PDPerson */ = {
 			isa = PBXGroup;
 			children = (
-				0487B8102169AC79001D797D /* AppDelegate.h */,
-				0487B8112169AC79001D797D /* AppDelegate.m */,
-				0487B8132169AC79001D797D /* ViewController.h */,
-				0487B8142169AC79001D797D /* ViewController.m */,
+				0487B83F2169F15E001D797D /* Base */,
+				0487B83B2169EB42001D797D /* M */,
+				0487B83A2169EB3C001D797D /* V */,
+				0487B8392169EB2C001D797D /* C */,
+				0487B8382169EAC3001D797D /* Const */,
+				0487B8372169EAA7001D797D /* NetWork */,
+				0487B8362169EA8F001D797D /* Category */,
+				0487B8352169EA85001D797D /* Tool */,
+				0487B8342169EA5D001D797D /* Other */,
 				0487B8162169AC79001D797D /* Main.storyboard */,
 				0487B8192169AC79001D797D /* Assets.xcassets */,
 				0487B81B2169AC79001D797D /* LaunchScreen.storyboard */,
@@ -113,6 +140,88 @@
 				0487B82B2169AC7A001D797D /* Info.plist */,
 			);
 			path = PDPersonTests;
+			sourceTree = "<group>";
+		};
+		0487B8342169EA5D001D797D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0487B8102169AC79001D797D /* AppDelegate.h */,
+				0487B8112169AC79001D797D /* AppDelegate.m */,
+				0487B8432169F2A5001D797D /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0487B8352169EA85001D797D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0487B8442169F3B1001D797D /* PDCachesManager.h */,
+				0487B8452169F3B1001D797D /* PDCachesManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0487B8362169EA8F001D797D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0487B84B2169F561001D797D /* SVProgressHUD+PD.h */,
+				0487B84A2169F561001D797D /* SVProgressHUD+PD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0487B8372169EAA7001D797D /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		0487B8382169EAC3001D797D /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				0487B8472169F48C001D797D /* PDConst.h */,
+				0487B8482169F48C001D797D /* PDConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		0487B8392169EB2C001D797D /* C */ = {
+			isa = PBXGroup;
+			children = (
+				0487B853216A06DE001D797D /* PDHomeVC.h */,
+				0487B854216A06DE001D797D /* PDHomeVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		0487B83A2169EB3C001D797D /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		0487B83B2169EB42001D797D /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		0487B83F2169F15E001D797D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0487B83C2169EB75001D797D /* PDViewController.h */,
+				0487B83D2169EB75001D797D /* PDViewController.m */,
+				0487B8402169F185001D797D /* PDNavigationController.h */,
+				0487B8412169F185001D797D /* PDNavigationController.m */,
+				0487B84D2169FA97001D797D /* PDTabBarController.h */,
+				0487B84E2169FA97001D797D /* PDTabBarController.m */,
+				0487B850216A0153001D797D /* PDTableViewController.h */,
+				0487B851216A0153001D797D /* PDTableViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		EA931A5EFC3099B299B8BCBD /* Pods */ = {
@@ -305,9 +414,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0487B8152169AC79001D797D /* ViewController.m in Sources */,
+				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
+				0487B8492169F48C001D797D /* PDConst.m in Sources */,
+				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
+				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
+				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
+				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
+				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
+				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +577,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U93W9VXREK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PDPerson/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PDPerson/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -478,6 +596,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U93W9VXREK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PDPerson/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = PDPerson/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

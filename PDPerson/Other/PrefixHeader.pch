@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  PDPerson
+//
+//  Created by mac on 2018/10/7.
+//  Copyright © 2018年 QingYe. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 横屏
+#define UI_IS_LANDSCAPE  ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+// iPad
+#define UI_IS_IPAD   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+// iPhone
+#define UI_IS_IPHONE  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+
+
+#define SCREEN_H ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_W ([UIScreen mainScreen].bounds.size.width)
+
+#define kSafeBottomMargin (kStatusBarHeight==20 ?  0.f : 34.f)
+#define kStatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+#define kNavBarHeight  (kStatusBarHeight + 44.)
+
+#define kScreenIphone5 [UIScreen mainScreen].bounds.size.height == 568
+#define kScreenIphonePlus [UIScreen mainScreen].bounds.size.height == 736
+#define kScreenIphoneX [UIScreen mainScreen].bounds.size.height == 812
+
+
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define mainThemeGray [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:1]
+#define mainThemeRed [UIColor colorWithRed:220/255.0f green:49/255.0f blue:55/255.0f alpha:1]
+#define lineGray [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1]
+
+
+#define UserDefaults   [NSUserDefaults standardUserDefaults]
+#define NotificationCenter     [NSNotificationCenter defaultCenter]
+
+#define WEAKSELF typeof(self) __weak wself = self;
+
+
+#import "SVProgressHUD+PD.h"
+
+#import "PDViewController.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PDTabBarController.h
 //  PDPerson
 //
 //  Created by mac on 2018/10/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PDTabBarController : UITabBarController
 
 @end
-
