@@ -21,6 +21,8 @@
 		0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B84E2169FA97001D797D /* PDTabBarController.m */; };
 		0487B852216A0153001D797D /* PDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B851216A0153001D797D /* PDTableViewController.m */; };
 		0487B855216A06DE001D797D /* PDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B854216A06DE001D797D /* PDHomeVC.m */; };
+		0487B858216AEE05001D797D /* PDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B857216AEE05001D797D /* PDWebViewController.m */; };
+		0487B85B216B29BC001D797D /* PDMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B85A216B29BC001D797D /* PDMineVC.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,10 @@
 		0487B851216A0153001D797D /* PDTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDTableViewController.m; sourceTree = "<group>"; };
 		0487B853216A06DE001D797D /* PDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHomeVC.h; sourceTree = "<group>"; };
 		0487B854216A06DE001D797D /* PDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHomeVC.m; sourceTree = "<group>"; };
+		0487B856216AEE05001D797D /* PDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDWebViewController.h; sourceTree = "<group>"; };
+		0487B857216AEE05001D797D /* PDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDWebViewController.m; sourceTree = "<group>"; };
+		0487B859216B29BC001D797D /* PDMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDMineVC.h; sourceTree = "<group>"; };
+		0487B85A216B29BC001D797D /* PDMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDMineVC.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +197,8 @@
 			children = (
 				0487B853216A06DE001D797D /* PDHomeVC.h */,
 				0487B854216A06DE001D797D /* PDHomeVC.m */,
+				0487B859216B29BC001D797D /* PDMineVC.h */,
+				0487B85A216B29BC001D797D /* PDMineVC.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -220,6 +228,8 @@
 				0487B84E2169FA97001D797D /* PDTabBarController.m */,
 				0487B850216A0153001D797D /* PDTableViewController.h */,
 				0487B851216A0153001D797D /* PDTableViewController.m */,
+				0487B856216AEE05001D797D /* PDWebViewController.h */,
+				0487B857216AEE05001D797D /* PDWebViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -422,8 +432,10 @@
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
 				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
 				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,
+				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
 				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
+				0487B85B216B29BC001D797D /* PDMineVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

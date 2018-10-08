@@ -8,6 +8,8 @@
 
 #import "PDTabBarController.h"
 #import "PDNavigationController.h"
+#import "PDMineVC.h"
+#import "PDHomeVC.h"
 
 @interface PDTabBarController ()
 
@@ -17,45 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
+
+    [self setTabbarBgColor];
+    [self setupChildVCs];
 }
 
 #pragma 添加子控制器
 -(void)setupChildVCs{
     
     //1.首页
-    PDViewController *mainPageVC = [[PDFirstPageVC alloc] init];
-    
-    UINavigationController *nav = [[PDNavigationVC alloc] initWithRootViewController:mainPageVC];
-    
+    PDViewController *mainPageVC = [[PDHomeVC alloc] init];
+    UINavigationController *nav = [[PDNavigationController alloc] initWithRootViewController:mainPageVC];
     [self addChildViewController:nav];
-    [self setTabbarContent:mainPageVC image:[UIImage imageNamed:@"首页"] selectImg:[UIImage imageNamed:@"首页-选中"] title:@"首页"];
+    [self setTabbarContent:mainPageVC image:[UIImage imageNamed:@"home"] selectImg:[UIImage imageNamed:@"home_s"] title:@"首页"];
     
-    //2.服务
-    PDViewController *serviceVC = [[PDServiceVC alloc] init];
-    
-    UINavigationController *nav2 = [[PDNavigationVC alloc] initWithRootViewController:serviceVC];
-    
-    [self addChildViewController:nav2];
-    [self setTabbarContent:serviceVC image:[UIImage imageNamed:@"服务"] selectImg:[UIImage imageNamed:@"服务-选中"] title:@"服务"];
-    
-    //3.商品
-    PDViewController *shopVC = [[PDShoppingVC alloc] init];
-    
-    UINavigationController *nav3 = [[PDNavigationVC alloc] initWithRootViewController:shopVC];
-    
-    [self addChildViewController:nav3];
-    [self setTabbarContent:shopVC image:[UIImage imageNamed:@"商城"] selectImg:[UIImage imageNamed:@"商城-选中"] title:@"商品"];
     
     //4.税收
-    PDViewController *texVC = [[PDtaxVC alloc] init];
-    
-    UINavigationController *nav4 = [[PDNavigationVC alloc] initWithRootViewController:texVC];
-    
+    PDViewController *texVC = [[PDMineVC alloc] init];
+    UINavigationController *nav4 = [[PDNavigationController alloc] initWithRootViewController:texVC];
     [self addChildViewController:nav4];
-    [self setTabbarContent:texVC image:[UIImage imageNamed:@"税收"] selectImg:[UIImage imageNamed:@"税收-选中"] title:@"税收"];
+    [self setTabbarContent:texVC image:[UIImage imageNamed:@"mine"] selectImg:[UIImage imageNamed:@"mine_s"] title:@"税收"];
     
 }
 

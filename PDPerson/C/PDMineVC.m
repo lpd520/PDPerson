@@ -1,31 +1,32 @@
 //
-//  PDHomeVC.m
+//  PDMineVC.m
 //  PDPerson
 //
-//  Created by mac on 2018/10/7.
+//  Created by mac on 2018/10/8.
 //  Copyright © 2018年 QingYe. All rights reserved.
 //
 
-#import "PDHomeVC.h"
+#import "PDMineVC.h"
 
-@interface PDHomeVC ()
+@interface PDMineVC ()
 
 @end
 
-@implementation PDHomeVC
+@implementation PDMineVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+
+    self.view.backgroundColor = [UIColor blueColor];
+
 }
+
 
 -(void)configure{
     [super configure];
     // title
-    self.title = @"Home";
+    self.title = @"Mine";
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
