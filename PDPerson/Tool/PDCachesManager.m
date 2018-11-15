@@ -19,10 +19,8 @@
 +(NSString *)getCachesSize{
     // 调试
 #ifdef DEBUG
-    
     // 如果文件夹不存在 or 不是一个文件夹, 那么就抛出一个异常
     // 抛出异常会导致程序闪退, 所以只在调试阶段抛出。发布阶段不要再抛了,--->影响用户体验
-    
     BOOL isDirectory = NO;
     
     BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:cachePath isDirectory:&isDirectory];
@@ -36,7 +34,6 @@
     
     //发布
 #else
-    
 #endif
     
     //1.获取“cachePath”文件夹下面的所有文件

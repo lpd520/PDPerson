@@ -12,6 +12,16 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+// 头文件
+#import "SVProgressHUD+PD.h"
+
+#import "PDViewController.h"
+#import "PDConst.h"
+
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
 // 横屏
 #define UI_IS_LANDSCAPE  ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
 // iPad
@@ -19,17 +29,21 @@
 // iPhone
 #define UI_IS_IPHONE  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 
-
 #define SCREEN_H ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_W ([UIScreen mainScreen].bounds.size.width)
 
-#define kSafeBottomMargin (kStatusBarHeight==20 ?  0.f : 34.f)
-#define kStatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
-#define kNavBarHeight  (kStatusBarHeight + 44.)
-
+// 是否iphone5   plus   X(刘海机型)
 #define kScreenIphone5 [UIScreen mainScreen].bounds.size.height == 568
 #define kScreenIphonePlus [UIScreen mainScreen].bounds.size.height == 736
-#define kScreenIphoneX [UIScreen mainScreen].bounds.size.height == 812
+#define kScreenIphoneX kStatusBarHeight == 44
+
+// 状态栏高度
+#define kStatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+// 导航栏
+#define kNavBarHeight  (kStatusBarHeight + 44.)
+// 底部安全距离
+#define kSafeBottomMargin (kStatusBarHeight==20 ?  0.f : 34.f)
+
 
 
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
@@ -38,14 +52,46 @@
 #define lineGray [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1]
 
 
-#define UserDefaults   [NSUserDefaults standardUserDefaults]
-#define NotificationCenter     [NSNotificationCenter defaultCenter]
+#define UserDefaults            [NSUserDefaults standardUserDefaults]
+#define NotificationCenter      [NSNotificationCenter defaultCenter]
 
 #define WEAKSELF typeof(self) __weak wself = self;
 
 
-#import "SVProgressHUD+PD.h"
 
-#import "PDViewController.h"
+
+
+
+#pragma - Block 类型
+typedef void (^PDResultHelper) (NSInteger flag, id result, NSString *message);
+typedef void (^PDArrayCallbackBlock) (NSArray *arr);
+typedef void (^PDModelCallbackBlock) (id model);
+
+
+#pragma - 静态内联函数
+
+static inline BOOL emptyArray(NSArray *array) {
+    if ([array isEqual:[NSNull null]]) return YES;
+    if (!array) return YES;
+    if (![array isKindOfClass:[NSArray class]]) return YES;
+    if (array.count == 0) return YES;
+    
+    return NO;
+};
+
+static inline BOOL emptyString(NSString *string) {
+    if ([string isEqual:[NSNull null]]) return YES;
+    if (!string) return YES;
+    if (![string isKindOfClass:[NSString class]]) return YES;
+    if (string.length == 0) return YES;
+    if ([string isEqualToString:@""]) return YES;
+    
+    return NO;
+};
+
+static inline NSString* stringFromInteger(NSInteger num){
+    return [NSString stringWithFormat:@"%zd",num];
+}
+
 
 #endif /* PrefixHeader_pch */

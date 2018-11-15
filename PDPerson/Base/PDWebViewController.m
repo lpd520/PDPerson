@@ -19,7 +19,6 @@
 
 -(WKWebView *)webView{
     if (!_webView) {
-        
         _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
         _webView.UIDelegate = self;                // UI代理
         _webView.navigationDelegate = self;        // 导航代理
@@ -54,7 +53,7 @@
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.requestURL]]];
     }
     else{
-        [self.webView loadHTMLString:@"html" baseURL:nil];
+        [self.webView loadHTMLString:self.htmlString baseURL:nil];
     }
 }
 

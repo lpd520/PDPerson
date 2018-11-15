@@ -10,13 +10,14 @@
 
 @interface PDConst : NSObject
 
+#pragma 网络相关
 
-extern NSString *const XUserName;
+extern NSString *const currentBaseURL;
 
 
+#pragma 其他
+extern NSString *const weixinAPP_ID;
 
-
-//static NSString *const BaseURL = @"http://www.........";
 
 
 @end

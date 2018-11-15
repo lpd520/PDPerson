@@ -11,7 +11,6 @@
 @interface SVProgressHUD (PD)
 
 
-
 +(void)showYESmessage:(NSString *)mesg;
 +(void)showNOmessage:(NSString *)mesg;
 

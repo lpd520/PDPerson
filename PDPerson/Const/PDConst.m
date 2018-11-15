@@ -10,8 +10,9 @@
 
 @implementation PDConst
 
-NSString *const XUserName = @"StrongX...........";
+NSString *const currentBaseURL = @"http://192....";
 
+NSString *const weixinAPP_ID = @"rgoagamaijoaifjoewjioej";
 
 
 @end
