@@ -18,6 +18,9 @@
 #import "PDViewController.h"
 #import "PDConst.h"
 
+#import "UILabel+PD.h"
+
+#import <Masonry.h>
 #import <SDWebImage/UIButton+WebCache.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -58,7 +61,29 @@
 #define WEAKSELF typeof(self) __weak wself = self;
 
 
+// 打印
+#ifdef DEBUG
+#define PDLog(...) printf("[%s] %s [第%d行]: %s\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+#else
+#define PDLog(...)
+#endif
 
+
+//单例化一个类
+#define SINGLETON_FOR_HEADER(className) \
+\
++ (className *)shared##className;
+
+#define SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+static className *shared##className = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+shared##className = [[self alloc] init]; \
+}); \
+return shared##className; \
+}
 
 
 

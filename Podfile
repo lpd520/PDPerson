@@ -22,13 +22,13 @@ target 'PDPerson' do
   pod 'MagicalRecord'    #本地数据库
   pod 'HXPhotoPicker', '~> 2.2.1'  #相册图片/视频 选择器
   
-  pod 'MOFSPickerManager'   #
+  pod 'MOFSPickerManager'   #地址 时间选择器
   pod 'CYLTabBarController','~> 1.17.16'
   pod 'JXCategoryView'   # VC tab框架
   pod 'FDFullscreenPopGesture', '1.1'     #全屏侧返回
-  pod 'PureLayout'    #布局
+  #pod 'PureLayout'    #布局
   
-  
+  pod 'DZNEmptyDataSet'  # tableview 空占位图
 
   target 'PDPersonTests' do
     inherit! :search_paths

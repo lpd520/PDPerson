@@ -31,6 +31,11 @@
 		04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7CC219D6C6800305A78 /* UIColor+Extend.m */; };
 		04C0F7D1219D6CDF00305A78 /* UIButton+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7CF219D6CDF00305A78 /* UIButton+PD.m */; };
 		04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7D3219D705800305A78 /* PDRequestURL.m */; };
+		04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7D6219D763E00305A78 /* PDXibCell.m */; };
+		04C0F7D9219D763E00305A78 /* PDXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C0F7D7219D763E00305A78 /* PDXibCell.xib */; };
+		04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7DA219EA76200305A78 /* PDShadowLabel.m */; };
+		04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7DE219EAA6700305A78 /* UIAlertController+PD.m */; };
+		04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 /* End PBXBuildFile section */
@@ -94,6 +99,15 @@
 		04C0F7D0219D6CDF00305A78 /* UIButton+PD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PD.h"; sourceTree = "<group>"; };
 		04C0F7D2219D705700305A78 /* PDRequestURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDRequestURL.h; sourceTree = "<group>"; };
 		04C0F7D3219D705800305A78 /* PDRequestURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDRequestURL.m; sourceTree = "<group>"; };
+		04C0F7D5219D763E00305A78 /* PDXibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDXibCell.h; sourceTree = "<group>"; };
+		04C0F7D6219D763E00305A78 /* PDXibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDXibCell.m; sourceTree = "<group>"; };
+		04C0F7D7219D763E00305A78 /* PDXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDXibCell.xib; sourceTree = "<group>"; };
+		04C0F7DA219EA76200305A78 /* PDShadowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDShadowLabel.m; sourceTree = "<group>"; };
+		04C0F7DB219EA76200305A78 /* PDShadowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDShadowLabel.h; sourceTree = "<group>"; };
+		04C0F7DD219EAA6700305A78 /* UIAlertController+PD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+PD.h"; sourceTree = "<group>"; };
+		04C0F7DE219EAA6700305A78 /* UIAlertController+PD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+PD.m"; sourceTree = "<group>"; };
+		04C0F7E0219EB22C00305A78 /* PDNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDNetworkCache.h; sourceTree = "<group>"; };
+		04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDNetworkCache.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +210,8 @@
 		0487B8362169EA8F001D797D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04C0F7DD219EAA6700305A78 /* UIAlertController+PD.h */,
+				04C0F7DE219EAA6700305A78 /* UIAlertController+PD.m */,
 				04C0F7D0219D6CDF00305A78 /* UIButton+PD.h */,
 				04C0F7CF219D6CDF00305A78 /* UIButton+PD.m */,
 				04C0F7CD219D6C6900305A78 /* UIColor+Extend.h */,
@@ -219,6 +235,8 @@
 			children = (
 				04C0F7D2219D705700305A78 /* PDRequestURL.h */,
 				04C0F7D3219D705800305A78 /* PDRequestURL.m */,
+				04C0F7E0219EB22C00305A78 /* PDNetworkCache.h */,
+				04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -246,6 +264,11 @@
 		0487B83A2169EB3C001D797D /* V */ = {
 			isa = PBXGroup;
 			children = (
+				04C0F7DB219EA76200305A78 /* PDShadowLabel.h */,
+				04C0F7DA219EA76200305A78 /* PDShadowLabel.m */,
+				04C0F7D5219D763E00305A78 /* PDXibCell.h */,
+				04C0F7D6219D763E00305A78 /* PDXibCell.m */,
+				04C0F7D7219D763E00305A78 /* PDXibCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -380,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0487B81D2169AC79001D797D /* LaunchScreen.storyboard in Resources */,
+				04C0F7D9219D763E00305A78 /* PDXibCell.xib in Resources */,
 				0487B81A2169AC79001D797D /* Assets.xcassets in Resources */,
 				0487B8182169AC79001D797D /* Main.storyboard in Resources */,
 			);
@@ -468,11 +492,15 @@
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
 				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
+				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
+				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
+				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
+				04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */,
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
 				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
 				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,

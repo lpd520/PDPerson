@@ -18,12 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    
+//    extern int oovalue
+    
 }
 
 -(void)configure{
     [super configure];
     // title
     self.title = @"Home";
+    
+    
 }
 
 

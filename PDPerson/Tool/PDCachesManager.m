@@ -30,6 +30,7 @@
         NSException *exception = [NSException exceptionWithName:@"文件错误" reason:@"请检查你的文件路径!" userInfo:nil];
         
         [exception raise];
+        
     }
     
     //发布
