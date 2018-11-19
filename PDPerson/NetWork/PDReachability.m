@@ -22,7 +22,7 @@
                 CallBack(@"未知网络");
                 break;
             case AFNetworkReachabilityStatusNotReachable:
-                CallBack(@"无法联网");
+                CallBack(@"网络处于断开状态");
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi:
                 CallBack(@"当前在WIFI网络下");
