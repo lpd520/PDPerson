@@ -19,6 +19,26 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
     HttpRequestType_POST
 };
 
+/**
+ *  请求数据 格式
+ */
+typedef NS_ENUM(NSUInteger, PDRequestSerializer) {
+    /** JSON格式*/
+    PDRequestSerializer_JSON = 0,
+    /** 二进制格式*/
+    PDRequestSerializer_HTTP,
+};
+
+/**
+ *  响应数据 格式
+ */
+typedef NS_ENUM(NSUInteger, PDResponseSerializer) {
+    /** 设置响应数据为JSON格式*/
+    PDResponseSerializer_JSON = 0,
+    /** 设置响应数据为二进制格式*/
+    PDResponseSerializer_HTTP,
+};
+
 
 @interface PDNetworking : NSObject
 
@@ -98,5 +118,25 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
                       failure:(void (^)(NSError *error))failure;
 
 
+#pragma mark - setter
+/**
+ *  设置 网络请求参数的格式:默认为JSON格式
+ */
++ (void)setRequestSerializer:(PDRequestSerializer)requestSerializer;
+
+/**
+ *  设置 服务器响应数据格式:默认为JSON格式
+ */
++ (void)setResponseSerializer:(PDResponseSerializer)responseSerializer;
+
+/**
+ *  设置 最大响应时间:默认为15s
+ */
+- (void)setRequestTimeoutInterval:(NSTimeInterval)time;
+
+/**
+ *  设置请求头
+ */
++ (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field;
 
 @end

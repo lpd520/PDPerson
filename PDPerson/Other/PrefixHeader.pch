@@ -25,21 +25,27 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 
 
-// 横屏
-#define UI_IS_LANDSCAPE  ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
-// iPad
-#define UI_IS_IPAD   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-// iPhone
-#define UI_IS_IPHONE  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+// --------APP
+#define AppCurrentVersion       [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define AppCurrentBuildVersion  [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
+#define APPKeyWindow [UIApplication sharedApplication].keyWindow
+
+// -------系统
+#define UserDefaults                    [NSUserDefaults standardUserDefaults]
+#define NotificationdDefaultCenter      [NSNotificationCenter defaultCenter]
+#define systemDocumentPath      NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
+
+// -------设备
+#define Device_isLandscape  ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+#define Device_iPad   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define Device_iPhone  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 
 #define SCREEN_H ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_W ([UIScreen mainScreen].bounds.size.width)
-
 // 是否iphone5   plus   X(刘海机型)
 #define kScreenIphone5 [UIScreen mainScreen].bounds.size.height == 568
 #define kScreenIphonePlus [UIScreen mainScreen].bounds.size.height == 736
 #define kScreenIphoneX kStatusBarHeight == 44
-
 // 状态栏高度
 #define kStatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
 // 导航栏
@@ -48,20 +54,17 @@
 #define kSafeBottomMargin (kStatusBarHeight==20 ?  0.f : 34.f)
 
 
-
+// -------颜色
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define mainThemeGray [UIColor colorWithRed:245/255.0f green:245/255.0f blue:245/255.0f alpha:1]
 #define mainThemeRed [UIColor colorWithRed:220/255.0f green:49/255.0f blue:55/255.0f alpha:1]
-#define lineGray [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1]
+#define separatorLineGray [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1]
 
-
-#define UserDefaults            [NSUserDefaults standardUserDefaults]
-#define NotificationCenter      [NSNotificationCenter defaultCenter]
 
 #define WEAKSELF typeof(self) __weak wself = self;
 
 
-// 打印
+// -------打印
 #ifdef DEBUG
 #define PDLog(...) printf("[%s] %s [第%d行]: %s\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
 #else
@@ -69,7 +72,7 @@
 #endif
 
 
-//单例化一个类
+//-------单例化一个类
 #define SINGLETON_FOR_HEADER(className) \
 \
 + (className *)shared##className;
@@ -86,16 +89,23 @@ return shared##className; \
 }
 
 
+//--------协议
+//@protocol PDModelProtocol <NSObject>
+//@optional
+//- (instancetype)initWithLocalDict:(NSDictionary*)dict;
+//- (NSDictionary*)localDict;
+//@end
 
-#pragma - Block 类型
-typedef void (^PDResultHelper) (NSInteger flag, id result, NSString *message);
+
+//-------- Block 类型
+typedef void (^PDResultHelper) (NSInteger code, id result, NSString *message);
 typedef void (^PDArrayCallbackBlock) (NSArray *arr);
 typedef void (^PDModelCallbackBlock) (id model);
 
 
-#pragma - 静态内联函数
+//-------- 静态内联函数
 
-static inline BOOL emptyArray(NSArray *array) {
+static inline BOOL isEmptyArray(NSArray *array) {
     if ([array isEqual:[NSNull null]]) return YES;
     if (!array) return YES;
     if (![array isKindOfClass:[NSArray class]]) return YES;
@@ -104,7 +114,7 @@ static inline BOOL emptyArray(NSArray *array) {
     return NO;
 };
 
-static inline BOOL emptyString(NSString *string) {
+static inline BOOL isEmptyString(NSString *string) {
     if ([string isEqual:[NSNull null]]) return YES;
     if (!string) return YES;
     if (![string isKindOfClass:[NSString class]]) return YES;
@@ -116,6 +126,24 @@ static inline BOOL emptyString(NSString *string) {
 
 static inline NSString* stringFromInteger(NSInteger num){
     return [NSString stringWithFormat:@"%zd",num];
+}
+
+// 刘海机型
+static inline BOOL isIPhoneXSeries() {
+    BOOL iPhoneXSeries = NO;
+    
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    
+    return iPhoneXSeries;
 }
 
 

@@ -41,6 +41,9 @@
 		04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7EA21A28E8400305A78 /* PDReachability.m */; };
 		04C0F7EE21A2953800305A78 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7ED21A2953800305A78 /* APIManager.m */; };
 		04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F021A2993100305A78 /* PDBaseModel.m */; };
+		04C0F7F421A2BA3500305A78 /* PDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F321A2BA3500305A78 /* PDUserModel.m */; };
+		04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F621A2BB9E00305A78 /* APPManager.m */; };
+		04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F921A2BBD200305A78 /* PDUserManager.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 /* End PBXBuildFile section */
@@ -123,6 +126,12 @@
 		04C0F7ED21A2953800305A78 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		04C0F7EF21A2993100305A78 /* PDBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDBaseModel.h; sourceTree = "<group>"; };
 		04C0F7F021A2993100305A78 /* PDBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDBaseModel.m; sourceTree = "<group>"; };
+		04C0F7F221A2BA3500305A78 /* PDUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDUserModel.h; sourceTree = "<group>"; };
+		04C0F7F321A2BA3500305A78 /* PDUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDUserModel.m; sourceTree = "<group>"; };
+		04C0F7F521A2BB9E00305A78 /* APPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPManager.h; sourceTree = "<group>"; };
+		04C0F7F621A2BB9E00305A78 /* APPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPManager.m; sourceTree = "<group>"; };
+		04C0F7F821A2BBD200305A78 /* PDUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDUserManager.h; sourceTree = "<group>"; };
+		04C0F7F921A2BBD200305A78 /* PDUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDUserManager.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +216,8 @@
 				0487B8102169AC79001D797D /* AppDelegate.h */,
 				0487B8112169AC79001D797D /* AppDelegate.m */,
 				0487B8432169F2A5001D797D /* PrefixHeader.pch */,
+				04C0F7F521A2BB9E00305A78 /* APPManager.h */,
+				04C0F7F621A2BB9E00305A78 /* APPManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -218,6 +229,8 @@
 				0487B8452169F3B1001D797D /* PDCachesManager.m */,
 				04C0F7BD219D4A0300305A78 /* PDTimer.h */,
 				04C0F7BE219D4A0300305A78 /* PDTimer.m */,
+				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
+				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -250,6 +263,8 @@
 			children = (
 				04C0F7E3219EB74000305A78 /* PDNetworking.h */,
 				04C0F7E4219EB74000305A78 /* PDNetworking.m */,
+				04C0F7EC21A2953800305A78 /* APIManager.h */,
+				04C0F7ED21A2953800305A78 /* APIManager.m */,
 				04C0F7D2219D705700305A78 /* PDRequestURL.h */,
 				04C0F7D3219D705800305A78 /* PDRequestURL.m */,
 				04C0F7E0219EB22C00305A78 /* PDNetworkCache.h */,
@@ -258,8 +273,6 @@
 				04C0F7E7219EB95A00305A78 /* PDUploadParam.m */,
 				04C0F7E921A28E8400305A78 /* PDReachability.h */,
 				04C0F7EA21A28E8400305A78 /* PDReachability.m */,
-				04C0F7EC21A2953800305A78 /* APIManager.h */,
-				04C0F7ED21A2953800305A78 /* APIManager.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -301,6 +314,8 @@
 			children = (
 				04C0F7EF21A2993100305A78 /* PDBaseModel.h */,
 				04C0F7F021A2993100305A78 /* PDBaseModel.m */,
+				04C0F7F221A2BA3500305A78 /* PDUserModel.h */,
+				04C0F7F321A2BA3500305A78 /* PDUserModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -516,6 +531,7 @@
 				04C0F7CB219D6B8700305A78 /* UIImageView+PD.m in Sources */,
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
 				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
+				04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
@@ -527,6 +543,7 @@
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
 				04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */,
+				04C0F7F421A2BA3500305A78 /* PDUserModel.m in Sources */,
 				04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */,
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
 				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
@@ -535,6 +552,7 @@
 				04C0F7C2219D623C00305A78 /* NSString+PD.m in Sources */,
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */,
+				04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */,
 				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,

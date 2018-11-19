@@ -9,13 +9,12 @@
 #import "PDNetworking.h"
 #import "PDUploadParam.h"
 #import <AFNetworking.h>
+#import <AFNetworkActivityIndicatorManager.h>
 
 
 @interface PDNetworking ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *manager;  // 网络管理者
-//@property (nonatomic, strong) NSMutableDictionary *requestIdentifierDictionary;  // 保存所有发起的请求
-//@property (nonatomic, strong) dispatch_queue_t requestProcessingQueue;   // 请求队列
 
 @end
 
@@ -187,8 +186,31 @@ static PDNetworking *_instance = nil;
 //        policy.validatesDomainName = NO;             //不验证证书的域名
 //        [_manager setSecurityPolicy:policy];
 
+        // 打开状态栏的等待菊花
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     }
     return _manager;
+}
+
+
+#pragma mark - 重置AFHTTPSessionManager相关属性
+- (void)setRequestSerializer:(PDRequestSerializer)requestSerializer{
+    _manager.requestSerializer = requestSerializer == PDRequestSerializer_HTTP
+    ? [AFHTTPRequestSerializer serializer] : [AFJSONRequestSerializer serializer];
+}
+
+- (void)setResponseSerializer:(PDResponseSerializer)responseSerializer{
+    _manager.responseSerializer = responseSerializer == PDResponseSerializer_HTTP
+    ? [AFHTTPResponseSerializer serializer] : [AFJSONResponseSerializer serializer];
+}
+
+- (void)setRequestTimeoutInterval:(NSTimeInterval)time{
+    _manager.requestSerializer.timeoutInterval = time;
+}
+
+- (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field{
+    
+    [_manager.requestSerializer setValue:value forHTTPHeaderField:field];
 }
 
 @end

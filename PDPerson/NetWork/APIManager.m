@@ -15,9 +15,7 @@
     
     [[PDNetworking sharedInstance] GET_WithURLString:url parameters:param success:^(id responseObject) {
         
-        NSInteger success = [responseObject[@"code"] integerValue]==0?0:1;
-        
-        !resultHelper?:resultHelper(success,responseObject,responseObject[@"msg"]);
+        !resultHelper?:resultHelper([responseObject[@"code"] integerValue],responseObject[@"data"],responseObject[@"msg"]);
         
     } failure:^(NSError *error) {
         
@@ -28,10 +26,7 @@
     
     [[PDNetworking sharedInstance] POST_WithURLString:url parameters:param success:^(id responseObject) {
         
-        NSInteger success = [responseObject[@"code"] integerValue]==0?0:1;
-        
-        !resultHelper?:resultHelper(success,responseObject,responseObject[@"msg"]);
-        
+        !resultHelper?:resultHelper([responseObject[@"code"] integerValue],responseObject[@"data"],responseObject[@"msg"]);
         
     } failure:^(NSError *error) {
         

@@ -19,19 +19,20 @@
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case AFNetworkReachabilityStatusUnknown:
-                CallBack(@"未知网络");
+                CallBack ? CallBack(@"未知网络") : nil;
                 break;
             case AFNetworkReachabilityStatusNotReachable:
-                CallBack(@"网络处于断开状态");
+                CallBack ? CallBack(@"网络处于断开状态") : nil;
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi:
-                CallBack(@"当前在WIFI网络下");
+                CallBack ? CallBack(@"当前在WIFI网络下") : nil;
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                CallBack(@"当前使用的是蜂窝网络");
+                CallBack ? CallBack(@"当前使用的是蜂窝网络") : nil;
                 break;
             default:
                 CallBack(@"xxxxx");
+//                CallBack ? CallBack(@"未知网络") : nil;
         }
     }];
     
