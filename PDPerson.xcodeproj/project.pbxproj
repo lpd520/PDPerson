@@ -38,6 +38,7 @@
 		04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */; };
 		04C0F7E5219EB74000305A78 /* PDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E4219EB74000305A78 /* PDNetworking.m */; };
 		04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E7219EB95A00305A78 /* PDUploadParam.m */; };
+		04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7EA21A28E8400305A78 /* PDReachability.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,8 @@
 		04C0F7E4219EB74000305A78 /* PDNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDNetworking.m; sourceTree = "<group>"; };
 		04C0F7E6219EB95A00305A78 /* PDUploadParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDUploadParam.h; sourceTree = "<group>"; };
 		04C0F7E7219EB95A00305A78 /* PDUploadParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDUploadParam.m; sourceTree = "<group>"; };
+		04C0F7E921A28E8400305A78 /* PDReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDReachability.h; sourceTree = "<group>"; };
+		04C0F7EA21A28E8400305A78 /* PDReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDReachability.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,14 +242,16 @@
 		0487B8372169EAA7001D797D /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				04C0F7E3219EB74000305A78 /* PDNetworking.h */,
+				04C0F7E4219EB74000305A78 /* PDNetworking.m */,
 				04C0F7D2219D705700305A78 /* PDRequestURL.h */,
 				04C0F7D3219D705800305A78 /* PDRequestURL.m */,
 				04C0F7E0219EB22C00305A78 /* PDNetworkCache.h */,
 				04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */,
-				04C0F7E3219EB74000305A78 /* PDNetworking.h */,
-				04C0F7E4219EB74000305A78 /* PDNetworking.m */,
 				04C0F7E6219EB95A00305A78 /* PDUploadParam.h */,
 				04C0F7E7219EB95A00305A78 /* PDUploadParam.m */,
+				04C0F7E921A28E8400305A78 /* PDReachability.h */,
+				04C0F7EA21A28E8400305A78 /* PDReachability.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -516,6 +521,7 @@
 				04C0F7E5219EB74000305A78 /* PDNetworking.m in Sources */,
 				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,
 				04C0F7C2219D623C00305A78 /* NSString+PD.m in Sources */,
+				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */,
 				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,

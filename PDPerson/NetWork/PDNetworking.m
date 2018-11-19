@@ -45,26 +45,6 @@ static PDNetworking *_instance = nil;
     dispatch_once(&onceToken, ^{
         _instance = [super init];
         
-        
-        AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-        [manager startMonitoring];
-        // 网络状态检测
-        [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-            switch (status) {
-                case AFNetworkReachabilityStatusUnknown:
-                    PDLog(@"位置网络");
-                    break;
-                case AFNetworkReachabilityStatusNotReachable:
-                    PDLog(@"无法联网");
-                    break;
-                case AFNetworkReachabilityStatusReachableViaWiFi:
-                    PDLog(@"当前使用的是蜂窝网络");
-                    break;
-                case AFNetworkReachabilityStatusReachableViaWWAN:
-                    PDLog(@"当前在WIFI网络下");
-            }
-        }];
-        
     });
     return _instance;
 }

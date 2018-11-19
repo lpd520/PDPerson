@@ -4,7 +4,8 @@
 //
 //  Created by mac on 2018/11/16.
 //  Copyright © 2018年 QingYe. All rights reserved.
-//
+
+// 上传接口 参数类
 
 #import <Foundation/Foundation.h>
 
