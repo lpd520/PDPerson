@@ -10,4 +10,7 @@
 
 @interface PDMineVC : PDViewController
 
+@property(nonatomic,strong)void (^rebackBlock)(NSString *flag);
+
+
 @end

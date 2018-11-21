@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D6CD621A55EE200E26A43 /* UIImage+PD.m */; };
 		0487B8122169AC79001D797D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8112169AC79001D797D /* AppDelegate.m */; };
 		0487B8182169AC79001D797D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8162169AC79001D797D /* Main.storyboard */; };
 		0487B81A2169AC79001D797D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8192169AC79001D797D /* Assets.xcassets */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041D6CD521A55EE200E26A43 /* UIImage+PD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+PD.h"; sourceTree = "<group>"; };
+		041D6CD621A55EE200E26A43 /* UIImage+PD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PD.m"; sourceTree = "<group>"; };
 		0487B80D2169AC79001D797D /* PDPerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDPerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0487B8102169AC79001D797D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0487B8112169AC79001D797D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -254,6 +257,8 @@
 				04C0F7C1219D623C00305A78 /* NSString+PD.m */,
 				0487B84B2169F561001D797D /* SVProgressHUD+PD.h */,
 				0487B84A2169F561001D797D /* SVProgressHUD+PD.m */,
+				041D6CD521A55EE200E26A43 /* UIImage+PD.h */,
+				041D6CD621A55EE200E26A43 /* UIImage+PD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
+				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,

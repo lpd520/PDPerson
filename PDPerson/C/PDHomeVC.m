@@ -8,6 +8,7 @@
 
 #import "PDHomeVC.h"
 #import "PDReachability.h"
+
 @interface PDHomeVC ()
 
 @end
@@ -20,6 +21,7 @@
     self.view.backgroundColor = [UIColor redColor];
     
 //    extern int oovalue
+    
     [PDReachability checkNetworkStatusOn:^(NSString *status) {
         [SVProgressHUD showNOmessage:status];
         NSLog(@"---->%@",status);

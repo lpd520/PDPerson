@@ -18,7 +18,10 @@
 #import "PDViewController.h"
 #import "PDConst.h"
 
+#import "UIButton+PD.h"
+#import "UIImageView+PD.h"
 #import "UILabel+PD.h"
+#import "UIImage+PD.h"
 
 #import <Masonry.h>
 #import <SDWebImage/UIButton+WebCache.h>

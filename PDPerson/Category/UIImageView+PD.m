@@ -27,9 +27,14 @@
     return imgv;
 }
 
--(void)setImageWithImgURL:(NSString *)imgUrl{
+-(void)setImageWithImgURL:(NSString *)imgUrl isCircle:(BOOL)flag{
     
-    [self sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:nil];
+    [self sd_setImageWithURL:[NSURL URLWithString:imgUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+        if (flag) {
+            self.image = [image drawCircleImage];
+        }else
+            self.image = image;
+    }];
 }
-
 @end

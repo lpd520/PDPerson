@@ -12,8 +12,8 @@
 
 @implementation PDTimer
 
-static NSMutableDictionary *timers_;   //存放定时器
-dispatch_semaphore_t semaphore_;
+static NSMutableDictionary *timers_;   //存放定时器 arr
+dispatch_semaphore_t semaphore_;   // 信号量 控制线程并发访问的最大数量 
 
 
 + (void)initialize
