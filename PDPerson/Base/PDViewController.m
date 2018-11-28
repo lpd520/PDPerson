@@ -29,7 +29,6 @@
     
     // navbar
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(clickLeftButtonItem)];
-
     // title
     self.title = @"Home";
 }

@@ -43,7 +43,7 @@
     self.myTableView.showsVerticalScrollIndicator = NO;
     self.myTableView.showsHorizontalScrollIndicator = NO;
     self.myTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    self.myTableView.separatorColor = lineGray;
+    self.myTableView.separatorColor = separatorLineGray;
     
     //代理
     self.myTableView.delegate = self;

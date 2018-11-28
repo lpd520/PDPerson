@@ -10,7 +10,7 @@
 #import "PDNavigationController.h"
 #import "PDMineVC.h"
 #import "PDHomeVC.h"
-
+#import "PDWebViewController.h"
 @interface PDTabBarController ()
 
 @end

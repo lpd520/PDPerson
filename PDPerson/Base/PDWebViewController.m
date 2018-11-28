@@ -26,6 +26,7 @@
 //        _webView.allowsBackForwardNavigationGestures = YES;  // 左滑返回
 
         self.extendedLayoutIncludesOpaqueBars = YES;
+        
         if (@available(iOS 11.0, *)) {
             _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
         }
@@ -42,14 +43,15 @@
     
     [self configure];
     
-    [self loadWebContent];
     [self.view addSubview:self.webView];
-    
+    [self loadWebContent];
+
 }
 
 -(void)loadWebContent{
     
     if (self.requestURL) {
+        NSLog(@"=--->:%@---",[NSURLRequest requestWithURL:[NSURL URLWithString:self.requestURL]]);
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.requestURL]]];
     }
     else{
@@ -75,36 +77,37 @@
 #pragma mark - WKNavigationDelegate
  // 页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation{
-    
+
 }
 
 // 当内容开始返回时调用
 - (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation{
-    
+
 }
 
 // 加载完成
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    
+
 }
 // 加载失败
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
-    
-    [SVProgressHUD showNOmessage:@"网页内容加载失败"];
+
+//    [SVProgressHUD showNOmessage:@"网页内容加载失败"];
 }
 
 //  在发送请求之前，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    
-//    decisionHandler(YES);
+
+    decisionHandler(YES);  // must
 }
 
 // 在收到响应后，决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(nonnull WKNavigationResponse *)navigationResponse decisionHandler:(nonnull void (^)(WKNavigationResponsePolicy))decisionHandler{
-    
-}
 
-//接收到服务器跳转请求之后调用
+    decisionHandler(YES);  // must
+}
+//
+////接收到服务器跳转请求之后调用
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(null_unspecified WKNavigation *)navigation{
 }
 
@@ -113,6 +116,7 @@
 #pragma mark - WKUIDelegate 网页弹窗
 // 显示一个JS的Alert（与JS交互）
 -(void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
+
     completionHandler();   // must
 }
 // 显示一个确认框（JS的）
@@ -121,7 +125,7 @@
 }
 // 弹出一个输入框（与JS交互的）
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler{
-    
+
     completionHandler(@"x");
 }
 
