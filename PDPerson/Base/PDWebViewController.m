@@ -11,32 +11,17 @@
 @interface PDWebViewController ()
 
 @property(nonatomic,strong)WKWebView *webView;
+@property(nonatomic,strong)CALayer *progressLayer;
 
 
 @end
 
+static NSInteger progressHeight = 2;
+static NSString *progressKey = @"estimatedProgress";
+
+
 @implementation PDWebViewController
 
--(WKWebView *)webView{
-    if (!_webView) {
-        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
-        _webView.UIDelegate = self;                // UI代理
-        _webView.navigationDelegate = self;        // 导航代理
-        _webView.scrollView.delegate = self;
-//        _webView.allowsBackForwardNavigationGestures = YES;  // 左滑返回
-
-        self.extendedLayoutIncludesOpaqueBars = YES;
-        
-        if (@available(iOS 11.0, *)) {
-            _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
-        }
-//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchWebView)];
-//        tap.delegate = self;
-//        [_webView.scrollView addGestureRecognizer:tap];
-        
-    }
-    return _webView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,14 +29,26 @@
     [self configure];
     
     [self.view addSubview:self.webView];
+    
+    //添加进度条
+    [self addWebviewProgressView];
+    
     [self loadWebContent];
 
+}
+
+
+-(void)addWebviewProgressView{
+    
+    UIView *progress = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 0, progressHeight)];
+    progress.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:progress];
+    [progress.layer addSublayer:self.progressLayer];
 }
 
 -(void)loadWebContent{
     
     if (self.requestURL) {
-        NSLog(@"=--->:%@---",[NSURLRequest requestWithURL:[NSURL URLWithString:self.requestURL]]);
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.requestURL]]];
     }
     else{
@@ -73,6 +70,31 @@
     [SVProgressHUD dismiss];
     [self popVC];
 }
+
+#pragma mark - 监听加载进度
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    
+    if ([keyPath isEqualToString:progressKey]) {
+        
+        float f =  [change[NSKeyValueChangeNewKey] floatValue];
+        NSLog(@"#####>>%f",f);
+        self.progressLayer.opacity = 1;
+        self.progressLayer.frame = CGRectMake(0, 0, SCREEN_W * f, progressHeight);
+        if (f == 1) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.progressLayer.opacity = 0;
+            });
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.progressLayer.frame = CGRectMake(0, 0, 0, progressHeight);
+            });
+        }
+        
+        
+    }else{
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
 
 #pragma mark - WKNavigationDelegate
  // 页面开始加载时调用
@@ -132,6 +154,41 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc{
+    [self.webView removeObserver:self forKeyPath:progressKey];
+}
+
+
+-(CALayer *)progressLayer{
+    if (!_progressLayer) {
+        _progressLayer = [CALayer layer];
+        _progressLayer.frame = CGRectMake(0, 0, 0, progressHeight);
+        _progressLayer.backgroundColor = [UIColor greenColor].CGColor;
+    }
+    return _progressLayer;
+}
+
+-(WKWebView *)webView{
+    if (!_webView) {
+        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+        _webView.UIDelegate = self;                // UI代理
+        _webView.navigationDelegate = self;        // 导航代理
+        _webView.scrollView.delegate = self;
+        //        _webView.allowsBackForwardNavigationGestures = YES;  // 左滑返回
+        
+        self.extendedLayoutIncludesOpaqueBars = YES;
+        
+        if (@available(iOS 11.0, *)) {
+            _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
+        }
+        
+        //添加属性监听
+        [_webView addObserver:self forKeyPath:progressKey options:NSKeyValueObservingOptionNew context:nil];
+        
+    }
+    return _webView;
 }
 
 
