@@ -7,16 +7,16 @@
 //
 
 #import "PDWebViewController.h"
+#import "PDLoadingProgress.h"
+
 
 @interface PDWebViewController ()
 
 @property(nonatomic,strong)WKWebView *webView;
-@property(nonatomic,strong)CALayer *progressLayer;
-
+@property(nonatomic,strong)PDLoadingProgress *LoadingProgress;
 
 @end
 
-static NSInteger progressHeight = 2;
 static NSString *progressKey = @"estimatedProgress";
 
 
@@ -40,10 +40,8 @@ static NSString *progressKey = @"estimatedProgress";
 
 -(void)addWebviewProgressView{
     
-    UIView *progress = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 0, progressHeight)];
-    progress.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:progress];
-    [progress.layer addSublayer:self.progressLayer];
+    self.LoadingProgress = [[PDLoadingProgress alloc] initWithFrame:CGRectMake(0, 64, 0, 2)];
+    [self.view addSubview:self.LoadingProgress];
 }
 
 -(void)loadWebContent{
@@ -78,17 +76,7 @@ static NSString *progressKey = @"estimatedProgress";
         
         float f =  [change[NSKeyValueChangeNewKey] floatValue];
         NSLog(@"#####>>%f",f);
-        self.progressLayer.opacity = 1;
-        self.progressLayer.frame = CGRectMake(0, 0, SCREEN_W * f, progressHeight);
-        if (f == 1) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                self.progressLayer.opacity = 0;
-            });
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                self.progressLayer.frame = CGRectMake(0, 0, 0, progressHeight);
-            });
-        }
-        
+        self.LoadingProgress.progress = f;
         
     }else{
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
@@ -161,22 +149,13 @@ static NSString *progressKey = @"estimatedProgress";
 }
 
 
--(CALayer *)progressLayer{
-    if (!_progressLayer) {
-        _progressLayer = [CALayer layer];
-        _progressLayer.frame = CGRectMake(0, 0, 0, progressHeight);
-        _progressLayer.backgroundColor = [UIColor greenColor].CGColor;
-    }
-    return _progressLayer;
-}
-
 -(WKWebView *)webView{
     if (!_webView) {
         _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
         _webView.UIDelegate = self;                // UI代理
         _webView.navigationDelegate = self;        // 导航代理
         _webView.scrollView.delegate = self;
-        //        _webView.allowsBackForwardNavigationGestures = YES;  // 左滑返回
+        //_webView.allowsBackForwardNavigationGestures = YES;  // 左滑返回
         
         self.extendedLayoutIncludesOpaqueBars = YES;
         
