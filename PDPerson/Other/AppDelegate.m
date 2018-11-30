@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "PDTabBarController.h"
+#import "PDLocationManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +24,12 @@
     
 
     [self.window makeKeyAndVisible];
+    
+    PDLocationManager *man = [PDLocationManager sharedManager];
+    [man getGetLocationMessage:^(NSString *lat, NSString *lon) {
+       
+        PDLog(@">>>x:%@>>y:%@",lat,lon);
+    }];
     
     return YES;
 }

@@ -40,8 +40,6 @@
     });
 }
 
-
-
 - (void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
@@ -78,7 +76,7 @@
             //环形
         default:
         {
-            CGContextSetLineWidth(ctx, 10);
+            CGContextSetLineWidth(ctx, 10);    // 环的宽度
             CGContextSetLineCap(ctx, kCGLineCapRound);
             CGFloat to = - M_PI * 0.5 + self.progress * M_PI * 2 + 0.05; // 初始值0.05
             CGFloat radius = MIN(rect.size.width, rect.size.height) * 0.5 - viewItemMargin;

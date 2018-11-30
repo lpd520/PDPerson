@@ -13,7 +13,6 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 // 头文件
-#import "SVProgressHUD+PD.h"
 
 #import "PDViewController.h"
 #import "PDConst.h"
@@ -22,6 +21,8 @@
 #import "UIImageView+PD.h"
 #import "UILabel+PD.h"
 #import "UIImage+PD.h"
+#import "UIAlertController+PD.h"
+#import "SVProgressHUD+PD.h"
 
 #import <Masonry.h>
 #import <SDWebImage/UIButton+WebCache.h>
