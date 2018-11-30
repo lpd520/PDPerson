@@ -27,7 +27,7 @@
     return imgv;
 }
 
--(void)setImageWithImgURL:(NSString *)imgUrl isCircle:(BOOL)flag{
+-(void)setImageWithImgURL:(NSString *)imgUrl needDrawRadius:(BOOL)flag{
     
     [self sd_setImageWithURL:[NSURL URLWithString:imgUrl] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         

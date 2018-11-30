@@ -40,7 +40,7 @@ static NSString *progressKey = @"estimatedProgress";
 
 -(void)addWebviewProgressView{
     
-    self.LoadingProgress = [[PDLoadingProgress alloc] initWithFrame:CGRectMake(0, 64, 0, 2)];
+    self.LoadingProgress = [[PDLoadingProgress alloc] initWithFrame:CGRectMake(0, kNavBarHeight, 0, 2)];
     [self.view addSubview:self.LoadingProgress];
 }
 

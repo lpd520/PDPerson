@@ -8,6 +8,7 @@
 
 #import "PDTableViewController.h"
 
+
 @interface PDTableViewController ()
 
 @end
@@ -36,38 +37,62 @@
     
     [self configureTableView];
     
-    self.myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:self.style];
-    self.myTableView.backgroundColor = [UIColor whiteColor];
-    self.myTableView.frame = CGRectMake(0, kNavBarHeight, SCREEN_W, SCREEN_H-kNavBarHeight-kSafeBottomMargin);
-    self.myTableView.tableFooterView = [[UIView alloc] init];
-    self.myTableView.showsVerticalScrollIndicator = NO;
-    self.myTableView.showsHorizontalScrollIndicator = NO;
-    self.myTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    self.myTableView.separatorColor = separatorLineGray;
-    
-    //代理
-    self.myTableView.delegate = self;
-    self.myTableView.dataSource = self;
     
     [self.view addSubview:self.myTableView];
+    
+//    [self fetchData];
+    [self.myTableView reloadData];
+    
 }
+
 
 -(void)fetchData{
     
-    [self.dataList addObject:@""];
-    [self.dataList addObject:@""];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+    [self.dataList addObject:@"xxxxxxxxx"];
+
 }
 
 -(void)configureTableView{
     
     self.style = UITableViewStylePlain;
+
+    self.myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, SCREEN_W, SCREEN_H-kNavBarHeight-kSafeBottomMargin) style:self.style];
+    self.myTableView.backgroundColor = [UIColor whiteColor];
+    //    self.myTableView.frame = CGRectMake(0, kNavBarHeight, SCREEN_W, SCREEN_H-kNavBarHeight-kSafeBottomMargin);
+    self.myTableView.tableFooterView = [[UIView alloc] init];
+    self.myTableView.showsVerticalScrollIndicator = NO;
+    self.myTableView.showsHorizontalScrollIndicator = NO;
+    self.myTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.myTableView.separatorColor = separatorLineGray;
     [self.myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-
+    
+    //代理
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.headerArray.count;
-}
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//    return self.headerArray.count;
+//}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -77,9 +102,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    cell.textLabel.text = self.dataList.count>0?[self.dataList objectAtIndex:indexPath.row]:@"xx";
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
 
 
 - (void)didReceiveMemoryWarning {

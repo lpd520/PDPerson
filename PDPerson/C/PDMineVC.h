@@ -6,9 +6,9 @@
 //  Copyright © 2018年 QingYe. All rights reserved.
 //
 
-#import "PDViewController.h"
+#import "PDTableViewController.h"
 
-@interface PDMineVC : PDViewController
+@interface PDMineVC : PDTableViewController
 
 @property(nonatomic,strong)void (^rebackBlock)(NSString *flag);
 

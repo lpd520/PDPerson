@@ -8,6 +8,7 @@
 
 #import "PDTabBarController.h"
 #import "PDNavigationController.h"
+#import "PDTableViewController.h"
 #import "PDMineVC.h"
 #import "PDHomeVC.h"
 #import "PDWebViewController.h"
@@ -35,7 +36,7 @@
     
     
     //4.税收
-    PDViewController *texVC = [[PDMineVC alloc] init];
+    PDTableViewController *texVC = [[PDTableViewController alloc] init];
     UINavigationController *nav4 = [[PDNavigationController alloc] initWithRootViewController:texVC];
     [self addChildViewController:nav4];
     [self setTabbarContent:texVC image:[UIImage imageNamed:@"mine"] selectImg:[UIImage imageNamed:@"mine_s"] title:@"税收"];

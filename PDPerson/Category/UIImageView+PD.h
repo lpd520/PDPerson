@@ -18,7 +18,7 @@
 /**
  * 设置网络图片
  */
--(void)setImageWithImgURL:(NSString *)imgUrl isCircle:(BOOL)flag;
+-(void)setImageWithImgURL:(NSString *)imgUrl needDrawRadius:(BOOL)flag;
 
 
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D6CD621A55EE200E26A43 /* UIImage+PD.m */; };
 		0436BD2021AFC50B00249953 /* PDLoadingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436BD1F21AFC50B00249953 /* PDLoadingProgress.m */; };
+		0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436BD2221AFCD6B00249953 /* UINavigationBar+bg.m */; };
+		0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436BD2F21B0D0CA00249953 /* PDLoadingView.m */; };
 		0487B8122169AC79001D797D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487B8112169AC79001D797D /* AppDelegate.m */; };
 		0487B8182169AC79001D797D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8162169AC79001D797D /* Main.storyboard */; };
 		0487B81A2169AC79001D797D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487B8192169AC79001D797D /* Assets.xcassets */; };
@@ -65,6 +67,10 @@
 		041D6CD621A55EE200E26A43 /* UIImage+PD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PD.m"; sourceTree = "<group>"; };
 		0436BD1E21AFC50B00249953 /* PDLoadingProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLoadingProgress.h; sourceTree = "<group>"; };
 		0436BD1F21AFC50B00249953 /* PDLoadingProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLoadingProgress.m; sourceTree = "<group>"; };
+		0436BD2121AFCD6B00249953 /* UINavigationBar+bg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+bg.h"; sourceTree = "<group>"; };
+		0436BD2221AFCD6B00249953 /* UINavigationBar+bg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+bg.m"; sourceTree = "<group>"; };
+		0436BD2E21B0D0CA00249953 /* PDLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLoadingView.h; sourceTree = "<group>"; };
+		0436BD2F21B0D0CA00249953 /* PDLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLoadingView.m; sourceTree = "<group>"; };
 		0487B80D2169AC79001D797D /* PDPerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDPerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0487B8102169AC79001D797D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0487B8112169AC79001D797D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -262,6 +268,8 @@
 				0487B84A2169F561001D797D /* SVProgressHUD+PD.m */,
 				041D6CD521A55EE200E26A43 /* UIImage+PD.h */,
 				041D6CD621A55EE200E26A43 /* UIImage+PD.m */,
+				0436BD2121AFCD6B00249953 /* UINavigationBar+bg.h */,
+				0436BD2221AFCD6B00249953 /* UINavigationBar+bg.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -315,6 +323,8 @@
 				04C0F7D7219D763E00305A78 /* PDXibCell.xib */,
 				0436BD1E21AFC50B00249953 /* PDLoadingProgress.h */,
 				0436BD1F21AFC50B00249953 /* PDLoadingProgress.m */,
+				0436BD2E21B0D0CA00249953 /* PDLoadingView.h */,
+				0436BD2F21B0D0CA00249953 /* PDLoadingView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -545,6 +555,7 @@
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
+				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
 				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
@@ -569,6 +580,7 @@
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
+				0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */,
 				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
 				0487B85B216B29BC001D797D /* PDMineVC.m in Sources */,
 				04C0F7D1219D6CDF00305A78 /* UIButton+PD.m in Sources */,
