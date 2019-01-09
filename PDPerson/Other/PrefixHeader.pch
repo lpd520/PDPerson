@@ -108,7 +108,6 @@ typedef void (^PDModelCallbackBlock) (id model);
 
 
 //-------- 静态内联函数
-
 static inline BOOL isEmptyArray(NSArray *array) {
     if ([array isEqual:[NSNull null]]) return YES;
     if (!array) return YES;
