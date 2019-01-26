@@ -54,6 +54,9 @@
 		AF05459D21FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459521FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m */; };
 		AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459A21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m */; };
 		AF05459F21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459B21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m */; };
+		AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A121FC11640003064A /* FSSegmentTitleView.m */; };
+		AF0545A721FC11640003064A /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A421FC11640003064A /* FSPageContentView.m */; };
+		AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A921FC11BD0003064A /* PDTabsContentVC.m */; };
 		AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */; };
 		AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */; };
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
@@ -165,6 +168,13 @@
 		AF05459921FC0F010003064A /* MSSAutoresizeLabelFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSAutoresizeLabelFlowLayout.h; sourceTree = "<group>"; };
 		AF05459A21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlowCell.m; sourceTree = "<group>"; };
 		AF05459B21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlowConfig.m; sourceTree = "<group>"; };
+		AF0545A121FC11640003064A /* FSSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
+		AF0545A221FC11640003064A /* FSPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPageContentView.h; sourceTree = "<group>"; };
+		AF0545A321FC11640003064A /* FSScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScrollContentView.h; sourceTree = "<group>"; };
+		AF0545A421FC11640003064A /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
+		AF0545A521FC11640003064A /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
+		AF0545A821FC11BD0003064A /* PDTabsContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTabsContentVC.h; sourceTree = "<group>"; };
+		AF0545A921FC11BD0003064A /* PDTabsContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTabsContentVC.m; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
@@ -376,6 +386,8 @@
 				0487B83D2169EB75001D797D /* PDViewController.m */,
 				0487B8402169F185001D797D /* PDNavigationController.h */,
 				0487B8412169F185001D797D /* PDNavigationController.m */,
+				AF0545A821FC11BD0003064A /* PDTabsContentVC.h */,
+				AF0545A921FC11BD0003064A /* PDTabsContentVC.m */,
 				0487B84D2169FA97001D797D /* PDTabBarController.h */,
 				0487B84E2169FA97001D797D /* PDTabBarController.m */,
 				0487B850216A0153001D797D /* PDTableViewController.h */,
@@ -401,9 +413,22 @@
 			path = AutoLabel;
 			sourceTree = "<group>";
 		};
+		AF0545A021FC11640003064A /* FSScrollContentViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				AF0545A121FC11640003064A /* FSSegmentTitleView.m */,
+				AF0545A221FC11640003064A /* FSPageContentView.h */,
+				AF0545A321FC11640003064A /* FSScrollContentView.h */,
+				AF0545A421FC11640003064A /* FSPageContentView.m */,
+				AF0545A521FC11640003064A /* FSSegmentTitleView.h */,
+			);
+			path = FSScrollContentViewLib;
+			sourceTree = "<group>";
+		};
 		AFFEA12B21E5ED2E00704C98 /* Third-Lib */ = {
 			isa = PBXGroup;
 			children = (
+				AF0545A021FC11640003064A /* FSScrollContentViewLib */,
 				AF05459321FC0F010003064A /* AutoLabel */,
 				AFFEA12C21E5ED5100704C98 /* ZWPullMenuView */,
 			);
@@ -620,11 +645,13 @@
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
 				AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */,
 				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
+				AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */,
 				04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
 				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
+				AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */,
 				AF05459C21FC0F010003064A /* MSSAutoresizeLabelFlow.m in Sources */,
 				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
@@ -639,6 +666,7 @@
 				0436BD3321B1090200249953 /* PDLocationManager.m in Sources */,
 				AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */,
 				04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */,
+				AF0545A721FC11640003064A /* FSPageContentView.m in Sources */,
 				04C0F7F421A2BA3500305A78 /* PDUserModel.m in Sources */,
 				04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */,
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
