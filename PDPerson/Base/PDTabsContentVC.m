@@ -48,7 +48,7 @@
     CGRect viewFrame = CGRectMake(0, y0, SCREEN_W, 45);
     // 添加标题栏
     self.titleView = [[FSSegmentTitleView alloc] initWithFrame:viewFrame titles:self.titleArr delegate:self indicatorType:FSIndicatorTypeEqualTitle];
-    self.titleView.titleSelectColor = mainThemeBlue;
+    self.titleView.titleSelectColor = mainThemeRed;
     self.titleView.titleSelectFont = [UIFont systemFontOfSize:15];
     self.titleView.selectIndex = 0;
     [self.view addSubview:_titleView];

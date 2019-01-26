@@ -9,6 +9,13 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger,PDUploadQuantityCategory){
+    PDUploadQuantityCategorySingle = 0,   // 单张上传
+    PDUploadQuantityCategoryMulti        // 多张上传
+} ;
+
+
+
 @interface PDUploadParam : NSObject
 
 /**
@@ -27,6 +34,9 @@
  *  文件的MIME类型(image/png,image/jpg等)
  */
 @property (nonatomic, copy) NSString *mimeType;
+
+
+-(instancetype)initWithImage:(UIImage *)img Type:(PDUploadQuantityCategory)type;
 
 
 @end

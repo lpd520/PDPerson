@@ -57,6 +57,7 @@
 		AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A121FC11640003064A /* FSSegmentTitleView.m */; };
 		AF0545A721FC11640003064A /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A421FC11640003064A /* FSPageContentView.m */; };
 		AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A921FC11BD0003064A /* PDTabsContentVC.m */; };
+		AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545AB21FC12870003064A /* PDCountDownButton.m */; };
 		AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */; };
 		AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */; };
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
@@ -175,6 +176,8 @@
 		AF0545A521FC11640003064A /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
 		AF0545A821FC11BD0003064A /* PDTabsContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTabsContentVC.h; sourceTree = "<group>"; };
 		AF0545A921FC11BD0003064A /* PDTabsContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTabsContentVC.m; sourceTree = "<group>"; };
+		AF0545AB21FC12870003064A /* PDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCountDownButton.m; sourceTree = "<group>"; };
+		AF0545AC21FC12870003064A /* PDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCountDownButton.h; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 		0487B83A2169EB3C001D797D /* V */ = {
 			isa = PBXGroup;
 			children = (
+				AF0545AC21FC12870003064A /* PDCountDownButton.h */,
+				AF0545AB21FC12870003064A /* PDCountDownButton.m */,
 				04C0F7DB219EA76200305A78 /* PDShadowLabel.h */,
 				04C0F7DA219EA76200305A78 /* PDShadowLabel.m */,
 				04C0F7D5219D763E00305A78 /* PDXibCell.h */,
@@ -656,6 +661,7 @@
 				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
+				AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */,
 				AF05459D21FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m in Sources */,
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
