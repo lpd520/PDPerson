@@ -50,6 +50,10 @@
 		04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F621A2BB9E00305A78 /* APPManager.m */; };
 		04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F921A2BBD200305A78 /* PDUserManager.m */; };
 		A0ACD4454771E4A4A52E0539 /* libPods-PDPerson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF395270F540724282D48567 /* libPods-PDPerson.a */; };
+		AF05459C21FC0F010003064A /* MSSAutoresizeLabelFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459421FC0F010003064A /* MSSAutoresizeLabelFlow.m */; };
+		AF05459D21FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459521FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m */; };
+		AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459A21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m */; };
+		AF05459F21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05459B21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m */; };
 		AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */; };
 		AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */; };
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
@@ -153,6 +157,14 @@
 		04C0F7F921A2BBD200305A78 /* PDUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDUserManager.m; sourceTree = "<group>"; };
 		574AA14E3F37B45A1D8670AD /* Pods-PDPersonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A727909EA2254038BDA7D593 /* Pods-PDPersonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPersonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPersonTests/Pods-PDPersonTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF05459421FC0F010003064A /* MSSAutoresizeLabelFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlow.m; sourceTree = "<group>"; };
+		AF05459521FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlowLayout.m; sourceTree = "<group>"; };
+		AF05459621FC0F010003064A /* MSSAutoresizeLabelFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSAutoresizeLabelFlowCell.h; sourceTree = "<group>"; };
+		AF05459721FC0F010003064A /* MSSAutoresizeLabelFlowConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSAutoresizeLabelFlowConfig.h; sourceTree = "<group>"; };
+		AF05459821FC0F010003064A /* MSSAutoresizeLabelFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSAutoresizeLabelFlow.h; sourceTree = "<group>"; };
+		AF05459921FC0F010003064A /* MSSAutoresizeLabelFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSAutoresizeLabelFlowLayout.h; sourceTree = "<group>"; };
+		AF05459A21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlowCell.m; sourceTree = "<group>"; };
+		AF05459B21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSAutoresizeLabelFlowConfig.m; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
@@ -374,9 +386,25 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		AF05459321FC0F010003064A /* AutoLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AF05459821FC0F010003064A /* MSSAutoresizeLabelFlow.h */,
+				AF05459421FC0F010003064A /* MSSAutoresizeLabelFlow.m */,
+				AF05459921FC0F010003064A /* MSSAutoresizeLabelFlowLayout.h */,
+				AF05459521FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m */,
+				AF05459621FC0F010003064A /* MSSAutoresizeLabelFlowCell.h */,
+				AF05459A21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m */,
+				AF05459721FC0F010003064A /* MSSAutoresizeLabelFlowConfig.h */,
+				AF05459B21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m */,
+			);
+			path = AutoLabel;
+			sourceTree = "<group>";
+		};
 		AFFEA12B21E5ED2E00704C98 /* Third-Lib */ = {
 			isa = PBXGroup;
 			children = (
+				AF05459321FC0F010003064A /* AutoLabel */,
 				AFFEA12C21E5ED5100704C98 /* ZWPullMenuView */,
 			);
 			path = "Third-Lib";
@@ -386,12 +414,12 @@
 			isa = PBXGroup;
 			children = (
 				AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */,
-				AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */,
-				AFFEA12F21E5ED5100704C98 /* ZWPullMenuCell.h */,
 				AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */,
+				AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */,
 				AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */,
-				AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */,
+				AFFEA12F21E5ED5100704C98 /* ZWPullMenuCell.h */,
 				AFFEA13321E5ED5100704C98 /* ZWPullMenuCell.m */,
+				AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */,
 			);
 			path = ZWPullMenuView;
 			sourceTree = "<group>";
@@ -597,14 +625,17 @@
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
 				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
+				AF05459C21FC0F010003064A /* MSSAutoresizeLabelFlow.m in Sources */,
 				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
+				AF05459D21FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m in Sources */,
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
+				AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */,
 				0436BD3321B1090200249953 /* PDLocationManager.m in Sources */,
 				AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */,
 				04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */,
@@ -618,6 +649,7 @@
 				0436BD2021AFC50B00249953 /* PDLoadingProgress.m in Sources */,
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */,
+				AF05459F21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m in Sources */,
 				AFFEA13721E5ED5100704C98 /* ZWPullMenuCell.m in Sources */,
 				04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */,
 				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
