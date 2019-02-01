@@ -15,12 +15,16 @@ static NSString *const cellId = @"cellId";
 
 @interface MSSAutoresizeLabelFlow () <UICollectionViewDataSource,UICollectionViewDelegate,MSSAutoresizeLabelFlowLayoutDataSource,MSSAutoresizeLabelFlowLayoutDelegate>
 @property (nonatomic,strong) UICollectionView *collection;
-@property (nonatomic,strong) NSMutableArray   *data;
 @property (nonatomic,  copy) selectedHandler  handler;
 
 @end
 
 @implementation MSSAutoresizeLabelFlow
+
+-(void)setData:(NSMutableArray *)data{
+    _data = data;
+    [self.collection reloadData];
+}
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles selectedHandler:(selectedHandler)handler {
     self = [super initWithFrame:frame];

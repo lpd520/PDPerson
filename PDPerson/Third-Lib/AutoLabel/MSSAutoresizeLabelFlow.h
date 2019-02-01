@@ -4,8 +4,7 @@
 //
 //  Created by Mrss on 15/12/26.
 //  Copyright © 2015年 expai. All rights reserved.
-
-//  cell 宽度自适应的 collectionview
+//
 
 #import <UIKit/UIKit.h>
 
@@ -13,11 +12,13 @@ typedef void(^selectedHandler)(NSUInteger index,NSString *title);
 
 @interface MSSAutoresizeLabelFlow : UIView
 
+@property (nonatomic,strong) NSMutableArray   *data;
 
 
 - (instancetype)initWithFrame:(CGRect)frame
                        titles:(NSArray *)titles
               selectedHandler:(selectedHandler)handler;
+
 
 
 // 插入

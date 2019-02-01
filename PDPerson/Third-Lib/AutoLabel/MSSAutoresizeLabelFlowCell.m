@@ -20,7 +20,7 @@
 -(void)setIsSelected:(BOOL)isSelected{
     _isSelected = isSelected;
     
-    self.titleLabel.backgroundColor = _isSelected?[UIColor orangeColor]:[UIColor whiteColor];
+    self.titleLabel.backgroundColor = _isSelected?mainThemeGreen:[UIColor whiteColor];
 }
 
 - (UILabel *)titleLabel {
