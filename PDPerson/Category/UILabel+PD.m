@@ -26,6 +26,8 @@
     return lb;
 }
 
+
+
 -(void)setAttributedString:(NSUInteger )loc1 to:(NSUInteger )loc2 color:(UIColor *)color font:(float)fontsize{
     
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:self.text];

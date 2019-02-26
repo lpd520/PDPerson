@@ -42,7 +42,6 @@
 		04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7DE219EAA6700305A78 /* UIAlertController+PD.m */; };
 		04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */; };
 		04C0F7E5219EB74000305A78 /* PDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E4219EB74000305A78 /* PDNetworking.m */; };
-		04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7E7219EB95A00305A78 /* PDUploadParam.m */; };
 		04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7EA21A28E8400305A78 /* PDReachability.m */; };
 		04C0F7EE21A2953800305A78 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7ED21A2953800305A78 /* APIManager.m */; };
 		04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F7F021A2993100305A78 /* PDBaseModel.m */; };
@@ -58,6 +57,11 @@
 		AF0545A721FC11640003064A /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A421FC11640003064A /* FSPageContentView.m */; };
 		AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A921FC11BD0003064A /* PDTabsContentVC.m */; };
 		AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545AB21FC12870003064A /* PDCountDownButton.m */; };
+		AFBD2D212224CDE2005DB4C0 /* PDPicShowTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */; };
+		AFBD2D222224CDE2005DB4C0 /* PDPicSelectTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */; };
+		AFBD2D252224CE28005DB4C0 /* PDPictrueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */; };
+		AFBD2D282224CF74005DB4C0 /* PDImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D262224CF74005DB4C0 /* PDImageItem.m */; };
+		AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D292224D036005DB4C0 /* PDUploadParam.m */; };
 		AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */; };
 		AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */; };
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
@@ -145,8 +149,6 @@
 		04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDNetworkCache.m; sourceTree = "<group>"; };
 		04C0F7E3219EB74000305A78 /* PDNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDNetworking.h; sourceTree = "<group>"; };
 		04C0F7E4219EB74000305A78 /* PDNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDNetworking.m; sourceTree = "<group>"; };
-		04C0F7E6219EB95A00305A78 /* PDUploadParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDUploadParam.h; sourceTree = "<group>"; };
-		04C0F7E7219EB95A00305A78 /* PDUploadParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDUploadParam.m; sourceTree = "<group>"; };
 		04C0F7E921A28E8400305A78 /* PDReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDReachability.h; sourceTree = "<group>"; };
 		04C0F7EA21A28E8400305A78 /* PDReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDReachability.m; sourceTree = "<group>"; };
 		04C0F7EC21A2953800305A78 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
@@ -179,6 +181,16 @@
 		AF0545AB21FC12870003064A /* PDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCountDownButton.m; sourceTree = "<group>"; };
 		AF0545AC21FC12870003064A /* PDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCountDownButton.h; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBD2D1D2224CDE1005DB4C0 /* PDPicSelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicSelectTabView.h; sourceTree = "<group>"; };
+		AFBD2D1E2224CDE2005DB4C0 /* PDPicShowTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicShowTabView.h; sourceTree = "<group>"; };
+		AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPicShowTabView.m; sourceTree = "<group>"; };
+		AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPicSelectTabView.m; sourceTree = "<group>"; };
+		AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPictrueCell.m; sourceTree = "<group>"; };
+		AFBD2D242224CE28005DB4C0 /* PDPictrueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPictrueCell.h; sourceTree = "<group>"; };
+		AFBD2D262224CF74005DB4C0 /* PDImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDImageItem.m; sourceTree = "<group>"; };
+		AFBD2D272224CF74005DB4C0 /* PDImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDImageItem.h; sourceTree = "<group>"; };
+		AFBD2D292224D036005DB4C0 /* PDUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUploadParam.m; sourceTree = "<group>"; };
+		AFBD2D2A2224D036005DB4C0 /* PDUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUploadParam.h; sourceTree = "<group>"; };
 		AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
 		AFFEA12F21E5ED5100704C98 /* ZWPullMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuCell.h; sourceTree = "<group>"; };
@@ -277,6 +289,10 @@
 		0487B8352169EA85001D797D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				AFBD2D1D2224CDE1005DB4C0 /* PDPicSelectTabView.h */,
+				AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */,
+				AFBD2D1E2224CDE2005DB4C0 /* PDPicShowTabView.h */,
+				AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */,
 				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
 				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
 				0487B8442169F3B1001D797D /* PDCachesManager.h */,
@@ -325,10 +341,10 @@
 				04C0F7ED21A2953800305A78 /* APIManager.m */,
 				04C0F7D2219D705700305A78 /* PDRequestURL.h */,
 				04C0F7D3219D705800305A78 /* PDRequestURL.m */,
+				AFBD2D2A2224D036005DB4C0 /* PDUploadParam.h */,
+				AFBD2D292224D036005DB4C0 /* PDUploadParam.m */,
 				04C0F7E0219EB22C00305A78 /* PDNetworkCache.h */,
 				04C0F7E1219EB22C00305A78 /* PDNetworkCache.m */,
-				04C0F7E6219EB95A00305A78 /* PDUploadParam.h */,
-				04C0F7E7219EB95A00305A78 /* PDUploadParam.m */,
 				04C0F7E921A28E8400305A78 /* PDReachability.h */,
 				04C0F7EA21A28E8400305A78 /* PDReachability.m */,
 			);
@@ -360,6 +376,10 @@
 			children = (
 				AF0545AC21FC12870003064A /* PDCountDownButton.h */,
 				AF0545AB21FC12870003064A /* PDCountDownButton.m */,
+				AFBD2D242224CE28005DB4C0 /* PDPictrueCell.h */,
+				AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */,
+				AFBD2D272224CF74005DB4C0 /* PDImageItem.h */,
+				AFBD2D262224CF74005DB4C0 /* PDImageItem.m */,
 				04C0F7DB219EA76200305A78 /* PDShadowLabel.h */,
 				04C0F7DA219EA76200305A78 /* PDShadowLabel.m */,
 				04C0F7D5219D763E00305A78 /* PDXibCell.h */,
@@ -646,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBD2D212224CDE2005DB4C0 /* PDPicShowTabView.m in Sources */,
 				04C0F7CB219D6B8700305A78 /* UIImageView+PD.m in Sources */,
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
 				AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */,
@@ -667,7 +688,9 @@
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
+				AFBD2D252224CE28005DB4C0 /* PDPictrueCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
+				AFBD2D222224CDE2005DB4C0 /* PDPicSelectTabView.m in Sources */,
 				AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */,
 				0436BD3321B1090200249953 /* PDLocationManager.m in Sources */,
 				AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */,
@@ -682,11 +705,12 @@
 				04C0F7C2219D623C00305A78 /* NSString+PD.m in Sources */,
 				0436BD2021AFC50B00249953 /* PDLoadingProgress.m in Sources */,
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
-				04C0F7E8219EB95A00305A78 /* PDUploadParam.m in Sources */,
 				AF05459F21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m in Sources */,
 				AFFEA13721E5ED5100704C98 /* ZWPullMenuCell.m in Sources */,
+				AFBD2D282224CF74005DB4C0 /* PDImageItem.m in Sources */,
 				04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */,
 				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
+				AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */,
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,

@@ -37,4 +37,12 @@
             self.image = image;
     }];
 }
+
+-(void)setImageWithImgURL:(NSString *)imgUrl placeHolder:(UIImage *)holderImage{
+    
+    [self sd_setImageWithURL:[NSURL URLWithString:imgUrl]placeholderImage:holderImage];
+}
+
+
+
 @end

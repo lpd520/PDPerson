@@ -20,6 +20,7 @@
  */
 -(void)setImageWithImgURL:(NSString *)imgUrl needDrawRadius:(BOOL)flag;
 
+-(void)setImageWithImgURL:(NSString *)imgUrl placeHolder:(UIImage *)holderImage;
 
 
 

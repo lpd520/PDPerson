@@ -12,8 +12,8 @@
 typedef NS_ENUM(NSUInteger,PDUploadQuantityCategory){
     PDUploadQuantityCategorySingle = 0,   // 单张上传
     PDUploadQuantityCategoryMulti        // 多张上传
+    
 } ;
-
 
 
 @interface PDUploadParam : NSObject
@@ -36,7 +36,10 @@ typedef NS_ENUM(NSUInteger,PDUploadQuantityCategory){
 @property (nonatomic, copy) NSString *mimeType;
 
 
+//-(instancetype)initWithName:(NSString *)name FileName:(NSString *)fileName Type:(NSString *)type;
 -(instancetype)initWithImage:(UIImage *)img Type:(PDUploadQuantityCategory)type;
+
+
 
 
 @end
