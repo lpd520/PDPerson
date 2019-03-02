@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *imageUrl;
 @property(nonatomic,strong)UIImage  *image;
 
-@property(nonatomic,assign)BOOL canDelete;
+@property(nonatomic,assign)BOOL hideDeleted;
 
 
 @property(nonatomic,weak)id<PDImageItemSelectDelegate> delegate;

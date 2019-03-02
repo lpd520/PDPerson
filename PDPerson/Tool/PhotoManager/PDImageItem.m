@@ -21,6 +21,13 @@
 @implementation PDImageItem
 
 
+-(void)setHideDeleted:(BOOL)hideDeleted{
+    _hideDeleted = hideDeleted;
+    
+    [xBtn setHidden:hideDeleted];
+
+}
+
 -(instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
@@ -37,7 +44,7 @@
         [self.contentView addSubview:xBtn];
         [xBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.right.equalTo(self.contentView);
-            make.size.mas_equalTo(CGSizeMake(15, 15));
+            make.size.mas_equalTo(CGSizeMake(20, 20));
         }];
         
         [xBtn addTarget:self action:@selector(clickX) forControlEvents:UIControlEventTouchUpInside];
@@ -47,6 +54,9 @@
 }
 
 -(void)clickX{
+    NSLog(@"self.imageUrl:  [%@]",self.imageUrl);
+    if(self.imageUrl==nil)  return ;
+    
     if ([self.delegate respondsToSelector:@selector(didDeletedImageItemOnCell:atIndex:)]) {
         [self.delegate didDeletedImageItemOnCell:self atIndex:self.tag];
     }
@@ -56,7 +66,7 @@
 -(void)setImageUrl:(NSString *)imageUrl{
     _imageUrl = imageUrl;
     if (imageUrl.length>0) {
-        [imgv setImageWithImgURL:imageUrl placeHolder:[UIImage imageNamed:@"camera"]];
+        [imgv setImageWithImgURL:imageUrl placeHolder:[UIImage imageNamed:@"placeHolder"]];
     }else{
         imgv.image = [UIImage imageNamed:@"camera"];
     }
@@ -66,9 +76,7 @@
     imgv.image = image?image:[UIImage imageNamed:@"camera"];
 }
 
--(void)setCanDelete:(BOOL)canDelete{
-    [xBtn setHidden:canDelete];
-}
+
                                  
 
 @end

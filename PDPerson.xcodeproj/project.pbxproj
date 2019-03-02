@@ -57,11 +57,10 @@
 		AF0545A721FC11640003064A /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A421FC11640003064A /* FSPageContentView.m */; };
 		AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A921FC11BD0003064A /* PDTabsContentVC.m */; };
 		AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545AB21FC12870003064A /* PDCountDownButton.m */; };
-		AFBD2D212224CDE2005DB4C0 /* PDPicShowTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */; };
-		AFBD2D222224CDE2005DB4C0 /* PDPicSelectTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */; };
-		AFBD2D252224CE28005DB4C0 /* PDPictrueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */; };
-		AFBD2D282224CF74005DB4C0 /* PDImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D262224CF74005DB4C0 /* PDImageItem.m */; };
 		AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D292224D036005DB4C0 /* PDUploadParam.m */; };
+		AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFD9A59222A871100818ECC /* PDPicSelectTabView.m */; };
+		AFFD9A5D222A871100818ECC /* PDImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFD9A5A222A871100818ECC /* PDImageItem.m */; };
+		AFFD9A60222A877E00818ECC /* PDPhotoManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFD9A5F222A877E00818ECC /* PDPhotoManagerVC.m */; };
 		AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13021E5ED5100704C98 /* ZWPullMenuModel.m */; };
 		AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13121E5ED5100704C98 /* ZWPullMenuView.m */; };
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
@@ -181,16 +180,14 @@
 		AF0545AB21FC12870003064A /* PDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCountDownButton.m; sourceTree = "<group>"; };
 		AF0545AC21FC12870003064A /* PDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCountDownButton.h; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFBD2D1D2224CDE1005DB4C0 /* PDPicSelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicSelectTabView.h; sourceTree = "<group>"; };
-		AFBD2D1E2224CDE2005DB4C0 /* PDPicShowTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicShowTabView.h; sourceTree = "<group>"; };
-		AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPicShowTabView.m; sourceTree = "<group>"; };
-		AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPicSelectTabView.m; sourceTree = "<group>"; };
-		AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPictrueCell.m; sourceTree = "<group>"; };
-		AFBD2D242224CE28005DB4C0 /* PDPictrueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPictrueCell.h; sourceTree = "<group>"; };
-		AFBD2D262224CF74005DB4C0 /* PDImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDImageItem.m; sourceTree = "<group>"; };
-		AFBD2D272224CF74005DB4C0 /* PDImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDImageItem.h; sourceTree = "<group>"; };
 		AFBD2D292224D036005DB4C0 /* PDUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUploadParam.m; sourceTree = "<group>"; };
 		AFBD2D2A2224D036005DB4C0 /* PDUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUploadParam.h; sourceTree = "<group>"; };
+		AFFD9A58222A871100818ECC /* PDPicSelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicSelectTabView.h; sourceTree = "<group>"; };
+		AFFD9A59222A871100818ECC /* PDPicSelectTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPicSelectTabView.m; sourceTree = "<group>"; };
+		AFFD9A5A222A871100818ECC /* PDImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDImageItem.m; sourceTree = "<group>"; };
+		AFFD9A5B222A871100818ECC /* PDImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDImageItem.h; sourceTree = "<group>"; };
+		AFFD9A5E222A877E00818ECC /* PDPhotoManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPhotoManagerVC.h; sourceTree = "<group>"; };
+		AFFD9A5F222A877E00818ECC /* PDPhotoManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDPhotoManagerVC.m; sourceTree = "<group>"; };
 		AFFEA12D21E5ED5100704C98 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
 		AFFEA12E21E5ED5100704C98 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
 		AFFEA12F21E5ED5100704C98 /* ZWPullMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuCell.h; sourceTree = "<group>"; };
@@ -289,10 +286,7 @@
 		0487B8352169EA85001D797D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				AFBD2D1D2224CDE1005DB4C0 /* PDPicSelectTabView.h */,
-				AFBD2D202224CDE2005DB4C0 /* PDPicSelectTabView.m */,
-				AFBD2D1E2224CDE2005DB4C0 /* PDPicShowTabView.h */,
-				AFBD2D1F2224CDE2005DB4C0 /* PDPicShowTabView.m */,
+				AFFD9A57222A86A600818ECC /* PhotoManager */,
 				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
 				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
 				0487B8442169F3B1001D797D /* PDCachesManager.h */,
@@ -376,10 +370,6 @@
 			children = (
 				AF0545AC21FC12870003064A /* PDCountDownButton.h */,
 				AF0545AB21FC12870003064A /* PDCountDownButton.m */,
-				AFBD2D242224CE28005DB4C0 /* PDPictrueCell.h */,
-				AFBD2D232224CE28005DB4C0 /* PDPictrueCell.m */,
-				AFBD2D272224CF74005DB4C0 /* PDImageItem.h */,
-				AFBD2D262224CF74005DB4C0 /* PDImageItem.m */,
 				04C0F7DB219EA76200305A78 /* PDShadowLabel.h */,
 				04C0F7DA219EA76200305A78 /* PDShadowLabel.m */,
 				04C0F7D5219D763E00305A78 /* PDXibCell.h */,
@@ -448,6 +438,19 @@
 				AF0545A521FC11640003064A /* FSSegmentTitleView.h */,
 			);
 			path = FSScrollContentViewLib;
+			sourceTree = "<group>";
+		};
+		AFFD9A57222A86A600818ECC /* PhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				AFFD9A5E222A877E00818ECC /* PDPhotoManagerVC.h */,
+				AFFD9A5F222A877E00818ECC /* PDPhotoManagerVC.m */,
+				AFFD9A5B222A871100818ECC /* PDImageItem.h */,
+				AFFD9A5A222A871100818ECC /* PDImageItem.m */,
+				AFFD9A58222A871100818ECC /* PDPicSelectTabView.h */,
+				AFFD9A59222A871100818ECC /* PDPicSelectTabView.m */,
+			);
+			path = PhotoManager;
 			sourceTree = "<group>";
 		};
 		AFFEA12B21E5ED2E00704C98 /* Third-Lib */ = {
@@ -666,12 +669,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFBD2D212224CDE2005DB4C0 /* PDPicShowTabView.m in Sources */,
 				04C0F7CB219D6B8700305A78 /* UIImageView+PD.m in Sources */,
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
 				AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */,
 				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
 				AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */,
+				AFFD9A60222A877E00818ECC /* PDPhotoManagerVC.m in Sources */,
 				04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
@@ -688,9 +691,7 @@
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
-				AFBD2D252224CE28005DB4C0 /* PDPictrueCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
-				AFBD2D222224CDE2005DB4C0 /* PDPicSelectTabView.m in Sources */,
 				AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */,
 				0436BD3321B1090200249953 /* PDLocationManager.m in Sources */,
 				AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */,
@@ -707,13 +708,14 @@
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				AF05459F21FC0F010003064A /* MSSAutoresizeLabelFlowConfig.m in Sources */,
 				AFFEA13721E5ED5100704C98 /* ZWPullMenuCell.m in Sources */,
-				AFBD2D282224CF74005DB4C0 /* PDImageItem.m in Sources */,
 				04C0F7FA21A2BBD200305A78 /* PDUserManager.m in Sources */,
 				0487B858216AEE05001D797D /* PDWebViewController.m in Sources */,
+				AFFD9A5D222A871100818ECC /* PDImageItem.m in Sources */,
 				AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */,
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
+				AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */,
 				0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */,
 				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
 				0487B85B216B29BC001D797D /* PDMineVC.m in Sources */,
