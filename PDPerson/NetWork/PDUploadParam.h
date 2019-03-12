@@ -10,8 +10,8 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger,PDUploadQuantityCategory){
-    PDUploadQuantityCategorySingle = 0,   // 单张上传
-    PDUploadQuantityCategoryMulti        // 多张上传
+    PDUploadQuantityCategorySingle = 0,   // 单张 上传
+    PDUploadQuantityCategoryMulti        //  多张 上传
     
 } ;
 

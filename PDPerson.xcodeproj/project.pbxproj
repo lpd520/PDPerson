@@ -57,6 +57,7 @@
 		AF0545A721FC11640003064A /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A421FC11640003064A /* FSPageContentView.m */; };
 		AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545A921FC11BD0003064A /* PDTabsContentVC.m */; };
 		AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0545AB21FC12870003064A /* PDCountDownButton.m */; };
+		AF92B6A72237B6CC00F5E3E3 /* PDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF92B6A62237B6CC00F5E3E3 /* PDButton.m */; };
 		AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD2D292224D036005DB4C0 /* PDUploadParam.m */; };
 		AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFD9A59222A871100818ECC /* PDPicSelectTabView.m */; };
 		AFFD9A5D222A871100818ECC /* PDImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFD9A5A222A871100818ECC /* PDImageItem.m */; };
@@ -180,6 +181,8 @@
 		AF0545AB21FC12870003064A /* PDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCountDownButton.m; sourceTree = "<group>"; };
 		AF0545AC21FC12870003064A /* PDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCountDownButton.h; sourceTree = "<group>"; };
 		AF395270F540724282D48567 /* libPods-PDPerson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPerson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF92B6A52237B6CC00F5E3E3 /* PDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDButton.h; sourceTree = "<group>"; };
+		AF92B6A62237B6CC00F5E3E3 /* PDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDButton.m; sourceTree = "<group>"; };
 		AFBD2D292224D036005DB4C0 /* PDUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDUploadParam.m; sourceTree = "<group>"; };
 		AFBD2D2A2224D036005DB4C0 /* PDUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDUploadParam.h; sourceTree = "<group>"; };
 		AFFD9A58222A871100818ECC /* PDPicSelectTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDPicSelectTabView.h; sourceTree = "<group>"; };
@@ -379,6 +382,8 @@
 				0436BD1F21AFC50B00249953 /* PDLoadingProgress.m */,
 				0436BD2E21B0D0CA00249953 /* PDLoadingView.h */,
 				0436BD2F21B0D0CA00249953 /* PDLoadingView.m */,
+				AF92B6A52237B6CC00F5E3E3 /* PDButton.h */,
+				AF92B6A62237B6CC00F5E3E3 /* PDButton.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -714,6 +719,7 @@
 				AFBD2D2B2224D037005DB4C0 /* PDUploadParam.m in Sources */,
 				04C0F7CE219D6C6900305A78 /* UIColor+Extend.m in Sources */,
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,
+				AF92B6A72237B6CC00F5E3E3 /* PDButton.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
 				AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */,
 				0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */,

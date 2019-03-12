@@ -12,6 +12,7 @@
 #import "PDReachability.h"
 
 #import "PDLoadingView.h"
+#import "PDButton.h"
 
 @interface PDHomeVC ()
 
@@ -23,9 +24,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+
     
     [PDReachability checkNetworkStatusOn:^(NSString *status) {
-//        [SVProgressHUD showNOmessage:status];
+        // [SVProgressHUD showNOmessage:status];
         NSLog(@"---->%@",status);
     }];
     
