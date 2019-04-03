@@ -70,6 +70,14 @@
 		CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */; };
 		CB2C9993225492C2005AD15F /* UIView+JHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9991225492C1005AD15F /* UIView+JHFrame.m */; };
 		CB2C9996225495A6005AD15F /* JHRegularUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9995225495A6005AD15F /* JHRegularUtils.m */; };
+		CB2C99A82254B9D6005AD15F /* JHBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99982254B9D6005AD15F /* JHBaseRequest.m */; };
+		CB2C99A92254B9D6005AD15F /* YCAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99992254B9D6005AD15F /* YCAccountRequest.m */; };
+		CB2C99AA2254B9D6005AD15F /* YCHomeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C999B2254B9D6005AD15F /* YCHomeRequest.m */; };
+		CB2C99AB2254B9D6005AD15F /* JHHTTPResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C999C2254B9D6005AD15F /* JHHTTPResponseSerializer.m */; };
+		CB2C99AC2254B9D6005AD15F /* JHHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C999D2254B9D6005AD15F /* JHHTTPSessionManager.m */; };
+		CB2C99AD2254B9D6005AD15F /* YCOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99A42254B9D6005AD15F /* YCOrderRequest.m */; };
+		CB2C99AE2254B9D6005AD15F /* JHNetworkConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99A62254B9D6005AD15F /* JHNetworkConstant.m */; };
+		CB2C99AF2254B9D6005AD15F /* YCPackageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99A72254B9D6005AD15F /* YCPackageRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +216,22 @@
 		CB2C9992225492C2005AD15F /* UIView+JHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHFrame.h"; sourceTree = "<group>"; };
 		CB2C9994225495A6005AD15F /* JHRegularUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRegularUtils.h; sourceTree = "<group>"; };
 		CB2C9995225495A6005AD15F /* JHRegularUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRegularUtils.m; sourceTree = "<group>"; };
+		CB2C99982254B9D6005AD15F /* JHBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBaseRequest.m; sourceTree = "<group>"; };
+		CB2C99992254B9D6005AD15F /* YCAccountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAccountRequest.m; sourceTree = "<group>"; };
+		CB2C999A2254B9D6005AD15F /* YCOrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCOrderRequest.h; sourceTree = "<group>"; };
+		CB2C999B2254B9D6005AD15F /* YCHomeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCHomeRequest.m; sourceTree = "<group>"; };
+		CB2C999C2254B9D6005AD15F /* JHHTTPResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHTTPResponseSerializer.m; sourceTree = "<group>"; };
+		CB2C999D2254B9D6005AD15F /* JHHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHTTPSessionManager.m; sourceTree = "<group>"; };
+		CB2C999E2254B9D6005AD15F /* YCPackageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPackageRequest.h; sourceTree = "<group>"; };
+		CB2C999F2254B9D6005AD15F /* JHNetworkConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNetworkConstant.h; sourceTree = "<group>"; };
+		CB2C99A02254B9D6005AD15F /* YCAccountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAccountRequest.h; sourceTree = "<group>"; };
+		CB2C99A12254B9D6005AD15F /* JHBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBaseRequest.h; sourceTree = "<group>"; };
+		CB2C99A22254B9D6005AD15F /* JHHTTPResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHTTPResponseSerializer.h; sourceTree = "<group>"; };
+		CB2C99A32254B9D6005AD15F /* YCHomeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCHomeRequest.h; sourceTree = "<group>"; };
+		CB2C99A42254B9D6005AD15F /* YCOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCOrderRequest.m; sourceTree = "<group>"; };
+		CB2C99A52254B9D6005AD15F /* JHHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHTTPSessionManager.h; sourceTree = "<group>"; };
+		CB2C99A62254B9D6005AD15F /* JHNetworkConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkConstant.m; sourceTree = "<group>"; };
+		CB2C99A72254B9D6005AD15F /* YCPackageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPackageRequest.m; sourceTree = "<group>"; };
 		DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDPersonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE7D1BCBE21DE097359C38 /* Pods-PDPerson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPerson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDPerson/Pods-PDPerson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +371,7 @@
 		0487B8372169EAA7001D797D /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				CB2C99972254B9D6005AD15F /* HttpTool */,
 				04C0F7E3219EB74000305A78 /* PDNetworking.h */,
 				04C0F7E4219EB74000305A78 /* PDNetworking.m */,
 				04C0F7EC21A2953800305A78 /* APIManager.h */,
@@ -495,6 +520,29 @@
 				AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */,
 			);
 			path = ZWPullMenuView;
+			sourceTree = "<group>";
+		};
+		CB2C99972254B9D6005AD15F /* HttpTool */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C99982254B9D6005AD15F /* JHBaseRequest.m */,
+				CB2C99992254B9D6005AD15F /* YCAccountRequest.m */,
+				CB2C999A2254B9D6005AD15F /* YCOrderRequest.h */,
+				CB2C999B2254B9D6005AD15F /* YCHomeRequest.m */,
+				CB2C999C2254B9D6005AD15F /* JHHTTPResponseSerializer.m */,
+				CB2C999D2254B9D6005AD15F /* JHHTTPSessionManager.m */,
+				CB2C999E2254B9D6005AD15F /* YCPackageRequest.h */,
+				CB2C999F2254B9D6005AD15F /* JHNetworkConstant.h */,
+				CB2C99A02254B9D6005AD15F /* YCAccountRequest.h */,
+				CB2C99A12254B9D6005AD15F /* JHBaseRequest.h */,
+				CB2C99A22254B9D6005AD15F /* JHHTTPResponseSerializer.h */,
+				CB2C99A32254B9D6005AD15F /* YCHomeRequest.h */,
+				CB2C99A42254B9D6005AD15F /* YCOrderRequest.m */,
+				CB2C99A52254B9D6005AD15F /* JHHTTPSessionManager.h */,
+				CB2C99A62254B9D6005AD15F /* JHNetworkConstant.m */,
+				CB2C99A72254B9D6005AD15F /* YCPackageRequest.m */,
+			);
+			path = HttpTool;
 			sourceTree = "<group>";
 		};
 		EA931A5EFC3099B299B8BCBD /* Pods */ = {
@@ -696,10 +744,13 @@
 				AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */,
 				AFFD9A60222A877E00818ECC /* PDPhotoManagerVC.m in Sources */,
 				04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */,
+				CB2C99AB2254B9D6005AD15F /* JHHTTPResponseSerializer.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
+				CB2C99A82254B9D6005AD15F /* JHBaseRequest.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
 				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
+				CB2C99A92254B9D6005AD15F /* YCAccountRequest.m in Sources */,
 				AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */,
 				AF05459C21FC0F010003064A /* MSSAutoresizeLabelFlow.m in Sources */,
 				041D6CD721A55EE200E26A43 /* UIImage+PD.m in Sources */,
@@ -720,10 +771,13 @@
 				04C0F7F421A2BA3500305A78 /* PDUserModel.m in Sources */,
 				04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */,
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
+				CB2C99AE2254B9D6005AD15F /* JHNetworkConstant.m in Sources */,
 				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
+				CB2C99AD2254B9D6005AD15F /* YCOrderRequest.m in Sources */,
 				04C0F7E5219EB74000305A78 /* PDNetworking.m in Sources */,
 				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,
 				04C0F7C2219D623C00305A78 /* NSString+PD.m in Sources */,
+				CB2C99AC2254B9D6005AD15F /* JHHTTPSessionManager.m in Sources */,
 				0436BD2021AFC50B00249953 /* PDLoadingProgress.m in Sources */,
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */,
@@ -739,8 +793,10 @@
 				04C0F7C5219D6A5200305A78 /* UIButton+larger.m in Sources */,
 				AF92B6A72237B6CC00F5E3E3 /* PDButton.m in Sources */,
 				0487B8122169AC79001D797D /* AppDelegate.m in Sources */,
+				CB2C99AA2254B9D6005AD15F /* YCHomeRequest.m in Sources */,
 				AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */,
 				0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */,
+				CB2C99AF2254B9D6005AD15F /* YCPackageRequest.m in Sources */,
 				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
 				0487B85B216B29BC001D797D /* PDMineVC.m in Sources */,
 				04C0F7D1219D6CDF00305A78 /* UIButton+PD.m in Sources */,
