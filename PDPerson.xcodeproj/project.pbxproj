@@ -68,6 +68,7 @@
 		AFFEA13721E5ED5100704C98 /* ZWPullMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13321E5ED5100704C98 /* ZWPullMenuCell.m */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 		CB073535225B669900A251A4 /* UIView+JHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */; };
+		CB073538225B674400A251A4 /* JHCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073537225B674400A251A4 /* JHCacheManager.m */; };
 		CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */; };
 		CB2C9993225492C2005AD15F /* UIView+JHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9991225492C1005AD15F /* UIView+JHFrame.m */; };
 		CB2C9996225495A6005AD15F /* JHRegularUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9995225495A6005AD15F /* JHRegularUtils.m */; };
@@ -213,6 +214,8 @@
 		BB8892BB59B93018739DD0D8 /* Pods-PDPerson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPerson.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPerson/Pods-PDPerson.release.xcconfig"; sourceTree = "<group>"; };
 		CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHPlaceholder.m"; sourceTree = "<group>"; };
 		CB073534225B669900A251A4 /* UIView+JHPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHPlaceholder.h"; sourceTree = "<group>"; };
+		CB073536225B674400A251A4 /* JHCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCacheManager.h; sourceTree = "<group>"; };
+		CB073537225B674400A251A4 /* JHCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCacheManager.m; sourceTree = "<group>"; };
 		CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
 		CB2C998F22549288005AD15F /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
 		CB2C9991225492C1005AD15F /* UIView+JHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHFrame.m"; sourceTree = "<group>"; };
@@ -328,6 +331,8 @@
 				AFFD9A57222A86A600818ECC /* PhotoManager */,
 				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
 				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
+				CB073536225B674400A251A4 /* JHCacheManager.h */,
+				CB073537225B674400A251A4 /* JHCacheManager.m */,
 				0487B8442169F3B1001D797D /* PDCachesManager.h */,
 				0487B8452169F3B1001D797D /* PDCachesManager.m */,
 				CB2C9994225495A6005AD15F /* JHRegularUtils.h */,
@@ -802,6 +807,7 @@
 				CB2C99AA2254B9D6005AD15F /* YCHomeRequest.m in Sources */,
 				AFFD9A5C222A871100818ECC /* PDPicSelectTabView.m in Sources */,
 				0436BD2321AFCD6B00249953 /* UINavigationBar+bg.m in Sources */,
+				CB073538225B674400A251A4 /* JHCacheManager.m in Sources */,
 				CB2C99AF2254B9D6005AD15F /* YCPackageRequest.m in Sources */,
 				0487B8422169F185001D797D /* PDNavigationController.m in Sources */,
 				0487B85B216B29BC001D797D /* PDMineVC.m in Sources */,
