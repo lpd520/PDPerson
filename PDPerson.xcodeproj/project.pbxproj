@@ -67,6 +67,7 @@
 		AFFEA13621E5ED5100704C98 /* ZWPullMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */; };
 		AFFEA13721E5ED5100704C98 /* ZWPullMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA13321E5ED5100704C98 /* ZWPullMenuCell.m */; };
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
+		CB073535225B669900A251A4 /* UIView+JHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */; };
 		CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */; };
 		CB2C9993225492C2005AD15F /* UIView+JHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9991225492C1005AD15F /* UIView+JHFrame.m */; };
 		CB2C9996225495A6005AD15F /* JHRegularUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9995225495A6005AD15F /* JHRegularUtils.m */; };
@@ -210,6 +211,8 @@
 		AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWPullMenuCell.xib; sourceTree = "<group>"; };
 		AFFEA13321E5ED5100704C98 /* ZWPullMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuCell.m; sourceTree = "<group>"; };
 		BB8892BB59B93018739DD0D8 /* Pods-PDPerson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDPerson.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDPerson/Pods-PDPerson.release.xcconfig"; sourceTree = "<group>"; };
+		CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHPlaceholder.m"; sourceTree = "<group>"; };
+		CB073534225B669900A251A4 /* UIView+JHPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHPlaceholder.h"; sourceTree = "<group>"; };
 		CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
 		CB2C998F22549288005AD15F /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
 		CB2C9991225492C1005AD15F /* UIView+JHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHFrame.m"; sourceTree = "<group>"; };
@@ -340,6 +343,8 @@
 		0487B8362169EA8F001D797D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CB073534225B669900A251A4 /* UIView+JHPlaceholder.h */,
+				CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */,
 				CB2C9992225492C2005AD15F /* UIView+JHFrame.h */,
 				CB2C9991225492C1005AD15F /* UIView+JHFrame.m */,
 				04C0F7DD219EAA6700305A78 /* UIAlertController+PD.h */,
@@ -747,6 +752,7 @@
 				CB2C99AB2254B9D6005AD15F /* JHHTTPResponseSerializer.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				CB2C99A82254B9D6005AD15F /* JHBaseRequest.m in Sources */,
+				CB073535225B669900A251A4 /* UIView+JHPlaceholder.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
 				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
