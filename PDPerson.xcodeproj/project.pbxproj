@@ -69,6 +69,14 @@
 		C0125F98C9F36FD6A324C641 /* libPods-PDPersonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA978AAD79E8241E1A855B7 /* libPods-PDPersonTests.a */; };
 		CB073535225B669900A251A4 /* UIView+JHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073533225B669900A251A4 /* UIView+JHPlaceholder.m */; };
 		CB073538225B674400A251A4 /* JHCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073537225B674400A251A4 /* JHCacheManager.m */; };
+		CB07354B225B689600A251A4 /* MSSCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB07353A225B689600A251A4 /* MSSCalendarCollectionViewCell.m */; };
+		CB07354C225B689600A251A4 /* MSSCalendarPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB07353C225B689600A251A4 /* MSSCalendarPopView.m */; };
+		CB07354D225B689600A251A4 /* MSSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB07353D225B689600A251A4 /* MSSCalendarViewController.m */; };
+		CB07354E225B689600A251A4 /* MSSCalendarCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB07353F225B689600A251A4 /* MSSCalendarCollectionReusableView.m */; };
+		CB07354F225B689600A251A4 /* MSSChineseCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073540225B689600A251A4 /* MSSChineseCalendarManager.m */; };
+		CB073550225B689600A251A4 /* MSSCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073543225B689600A251A4 /* MSSCalendarManager.m */; };
+		CB073551225B689600A251A4 /* MSSCircleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073546225B689600A251A4 /* MSSCircleLabel.m */; };
+		CB073552225B689600A251A4 /* MSSCalendarHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073548225B689600A251A4 /* MSSCalendarHeaderModel.m */; };
 		CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */; };
 		CB2C9993225492C2005AD15F /* UIView+JHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9991225492C1005AD15F /* UIView+JHFrame.m */; };
 		CB2C9996225495A6005AD15F /* JHRegularUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9995225495A6005AD15F /* JHRegularUtils.m */; };
@@ -216,6 +224,23 @@
 		CB073534225B669900A251A4 /* UIView+JHPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHPlaceholder.h"; sourceTree = "<group>"; };
 		CB073536225B674400A251A4 /* JHCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCacheManager.h; sourceTree = "<group>"; };
 		CB073537225B674400A251A4 /* JHCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCacheManager.m; sourceTree = "<group>"; };
+		CB07353A225B689600A251A4 /* MSSCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		CB07353B225B689600A251A4 /* MSSCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarManager.h; sourceTree = "<group>"; };
+		CB07353C225B689600A251A4 /* MSSCalendarPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarPopView.m; sourceTree = "<group>"; };
+		CB07353D225B689600A251A4 /* MSSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarViewController.m; sourceTree = "<group>"; };
+		CB07353E225B689600A251A4 /* MSSCircleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCircleLabel.h; sourceTree = "<group>"; };
+		CB07353F225B689600A251A4 /* MSSCalendarCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarCollectionReusableView.m; sourceTree = "<group>"; };
+		CB073540225B689600A251A4 /* MSSChineseCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSChineseCalendarManager.m; sourceTree = "<group>"; };
+		CB073541225B689600A251A4 /* MSSCalendarHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarHeaderModel.h; sourceTree = "<group>"; };
+		CB073542225B689600A251A4 /* MSSCalendarPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarPopView.h; sourceTree = "<group>"; };
+		CB073543225B689600A251A4 /* MSSCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarManager.m; sourceTree = "<group>"; };
+		CB073544225B689600A251A4 /* MSSCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		CB073545225B689600A251A4 /* MSSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarViewController.h; sourceTree = "<group>"; };
+		CB073546225B689600A251A4 /* MSSCircleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCircleLabel.m; sourceTree = "<group>"; };
+		CB073547225B689600A251A4 /* MSSCalendarDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarDefine.h; sourceTree = "<group>"; };
+		CB073548225B689600A251A4 /* MSSCalendarHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSCalendarHeaderModel.m; sourceTree = "<group>"; };
+		CB073549225B689600A251A4 /* MSSChineseCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSChineseCalendarManager.h; sourceTree = "<group>"; };
+		CB07354A225B689600A251A4 /* MSSCalendarCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSCalendarCollectionReusableView.h; sourceTree = "<group>"; };
 		CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
 		CB2C998F22549288005AD15F /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
 		CB2C9991225492C1005AD15F /* UIView+JHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHFrame.m"; sourceTree = "<group>"; };
@@ -328,6 +353,7 @@
 		0487B8352169EA85001D797D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				CB073539225B689600A251A4 /* MSSCalendar */,
 				AFFD9A57222A86A600818ECC /* PhotoManager */,
 				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
 				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
@@ -530,6 +556,30 @@
 				AFFEA13221E5ED5100704C98 /* ZWPullMenuCell.xib */,
 			);
 			path = ZWPullMenuView;
+			sourceTree = "<group>";
+		};
+		CB073539225B689600A251A4 /* MSSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				CB07353A225B689600A251A4 /* MSSCalendarCollectionViewCell.m */,
+				CB07353B225B689600A251A4 /* MSSCalendarManager.h */,
+				CB07353C225B689600A251A4 /* MSSCalendarPopView.m */,
+				CB07353D225B689600A251A4 /* MSSCalendarViewController.m */,
+				CB07353E225B689600A251A4 /* MSSCircleLabel.h */,
+				CB07353F225B689600A251A4 /* MSSCalendarCollectionReusableView.m */,
+				CB073540225B689600A251A4 /* MSSChineseCalendarManager.m */,
+				CB073541225B689600A251A4 /* MSSCalendarHeaderModel.h */,
+				CB073542225B689600A251A4 /* MSSCalendarPopView.h */,
+				CB073543225B689600A251A4 /* MSSCalendarManager.m */,
+				CB073544225B689600A251A4 /* MSSCalendarCollectionViewCell.h */,
+				CB073545225B689600A251A4 /* MSSCalendarViewController.h */,
+				CB073546225B689600A251A4 /* MSSCircleLabel.m */,
+				CB073547225B689600A251A4 /* MSSCalendarDefine.h */,
+				CB073548225B689600A251A4 /* MSSCalendarHeaderModel.m */,
+				CB073549225B689600A251A4 /* MSSChineseCalendarManager.h */,
+				CB07354A225B689600A251A4 /* MSSCalendarCollectionReusableView.h */,
+			);
+			path = MSSCalendar;
 			sourceTree = "<group>";
 		};
 		CB2C99972254B9D6005AD15F /* HttpTool */ = {
@@ -749,17 +799,21 @@
 			files = (
 				04C0F7CB219D6B8700305A78 /* UIImageView+PD.m in Sources */,
 				04C0F7D4219D705800305A78 /* PDRequestURL.m in Sources */,
+				CB07354B225B689600A251A4 /* MSSCalendarCollectionViewCell.m in Sources */,
 				AFFEA13421E5ED5100704C98 /* ZWPullMenuModel.m in Sources */,
 				0487B84C2169F561001D797D /* SVProgressHUD+PD.m in Sources */,
 				AF0545A621FC11640003064A /* FSSegmentTitleView.m in Sources */,
 				AFFD9A60222A877E00818ECC /* PDPhotoManagerVC.m in Sources */,
 				04C0F7F721A2BB9E00305A78 /* APPManager.m in Sources */,
+				CB073551225B689600A251A4 /* MSSCircleLabel.m in Sources */,
 				CB2C99AB2254B9D6005AD15F /* JHHTTPResponseSerializer.m in Sources */,
+				CB07354C225B689600A251A4 /* MSSCalendarPopView.m in Sources */,
 				04C0F7BF219D4A0300305A78 /* PDTimer.m in Sources */,
 				CB2C99A82254B9D6005AD15F /* JHBaseRequest.m in Sources */,
 				CB073535225B669900A251A4 /* UIView+JHPlaceholder.m in Sources */,
 				04C0F7EE21A2953800305A78 /* APIManager.m in Sources */,
 				04C0F7DF219EAA6700305A78 /* UIAlertController+PD.m in Sources */,
+				CB07354F225B689600A251A4 /* MSSChineseCalendarManager.m in Sources */,
 				0436BD3021B0D0CA00249953 /* PDLoadingView.m in Sources */,
 				CB2C99A92254B9D6005AD15F /* YCAccountRequest.m in Sources */,
 				AF0545AA21FC11BD0003064A /* PDTabsContentVC.m in Sources */,
@@ -768,9 +822,11 @@
 				04C0F7E2219EB22C00305A78 /* PDNetworkCache.m in Sources */,
 				0487B8202169AC79001D797D /* main.m in Sources */,
 				AF0545AD21FC12870003064A /* PDCountDownButton.m in Sources */,
+				CB073550225B689600A251A4 /* MSSCalendarManager.m in Sources */,
 				AF05459D21FC0F010003064A /* MSSAutoresizeLabelFlowLayout.m in Sources */,
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
+				CB07354E225B689600A251A4 /* MSSCalendarCollectionReusableView.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
@@ -783,12 +839,14 @@
 				04C0F7DC219EA76300305A78 /* PDShadowLabel.m in Sources */,
 				0487B855216A06DE001D797D /* PDHomeVC.m in Sources */,
 				CB2C99AE2254B9D6005AD15F /* JHNetworkConstant.m in Sources */,
+				CB07354D225B689600A251A4 /* MSSCalendarViewController.m in Sources */,
 				0487B8462169F3B1001D797D /* PDCachesManager.m in Sources */,
 				CB2C99AD2254B9D6005AD15F /* YCOrderRequest.m in Sources */,
 				04C0F7E5219EB74000305A78 /* PDNetworking.m in Sources */,
 				0487B83E2169EB75001D797D /* PDViewController.m in Sources */,
 				04C0F7C2219D623C00305A78 /* NSString+PD.m in Sources */,
 				CB2C99AC2254B9D6005AD15F /* JHHTTPSessionManager.m in Sources */,
+				CB073552225B689600A251A4 /* MSSCalendarHeaderModel.m in Sources */,
 				0436BD2021AFC50B00249953 /* PDLoadingProgress.m in Sources */,
 				04C0F7EB21A28E8400305A78 /* PDReachability.m in Sources */,
 				CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */,
