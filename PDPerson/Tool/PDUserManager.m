@@ -14,7 +14,9 @@
 SINGLETON_FOR_CLASS(PDUserManager)
 
 + (PDUserModel *)currentUser {
+    
     return [self sharedPDUserManager].currentUser;
+
 }
 
 +(NSString *)currentUserPhone{
