@@ -80,6 +80,8 @@
 		CB073558225B6C1D00A251A4 /* backItemImage_hl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB073554225B6C1D00A251A4 /* backItemImage_hl@2x.png */; };
 		CB073559225B6C1D00A251A4 /* backItemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB073555225B6C1D00A251A4 /* backItemImage@2x.png */; };
 		CB07355A225B6C1D00A251A4 /* JHWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB073557225B6C1D00A251A4 /* JHWKWebViewController.m */; };
+		CB0D00B122606137002F9749 /* JHDateConvertion.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0D00B022606136002F9749 /* JHDateConvertion.m */; };
+		CB0D00B422606146002F9749 /* YCAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0D00B322606146002F9749 /* YCAccountRequest.m */; };
 		CB2C999022549288005AD15F /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */; };
 		CB2C9993225492C2005AD15F /* UIView+JHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9991225492C1005AD15F /* UIView+JHFrame.m */; };
 		CB2C9996225495A6005AD15F /* JHRegularUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C9995225495A6005AD15F /* JHRegularUtils.m */; };
@@ -248,6 +250,10 @@
 		CB073555225B6C1D00A251A4 /* backItemImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItemImage@2x.png"; sourceTree = "<group>"; };
 		CB073556225B6C1D00A251A4 /* JHWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWKWebViewController.h; sourceTree = "<group>"; };
 		CB073557225B6C1D00A251A4 /* JHWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWKWebViewController.m; sourceTree = "<group>"; };
+		CB0D00AF22606136002F9749 /* JHDateConvertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDateConvertion.h; sourceTree = "<group>"; };
+		CB0D00B022606136002F9749 /* JHDateConvertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDateConvertion.m; sourceTree = "<group>"; };
+		CB0D00B222606146002F9749 /* YCAccountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAccountRequest.h; sourceTree = "<group>"; };
+		CB0D00B322606146002F9749 /* YCAccountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAccountRequest.m; sourceTree = "<group>"; };
 		CB2C998E22549288005AD15F /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
 		CB2C998F22549288005AD15F /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
 		CB2C9991225492C1005AD15F /* UIView+JHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHFrame.m"; sourceTree = "<group>"; };
@@ -364,6 +370,10 @@
 				AFFD9A57222A86A600818ECC /* PhotoManager */,
 				04C0F7F821A2BBD200305A78 /* PDUserManager.h */,
 				04C0F7F921A2BBD200305A78 /* PDUserManager.m */,
+				CB0D00B222606146002F9749 /* YCAccountRequest.h */,
+				CB0D00B322606146002F9749 /* YCAccountRequest.m */,
+				CB0D00AF22606136002F9749 /* JHDateConvertion.h */,
+				CB0D00B022606136002F9749 /* JHDateConvertion.m */,
 				CB073536225B674400A251A4 /* JHCacheManager.h */,
 				CB073537225B674400A251A4 /* JHCacheManager.m */,
 				0487B8442169F3B1001D797D /* PDCachesManager.h */,
@@ -849,11 +859,13 @@
 				0487B8492169F48C001D797D /* PDConst.m in Sources */,
 				04C0F7C8219D6A9E00305A78 /* UILabel+PD.m in Sources */,
 				CB07354E225B689600A251A4 /* MSSCalendarCollectionReusableView.m in Sources */,
+				CB0D00B422606146002F9749 /* YCAccountRequest.m in Sources */,
 				0487B852216A0153001D797D /* PDTableViewController.m in Sources */,
 				04C0F7D8219D763E00305A78 /* PDXibCell.m in Sources */,
 				0487B84F2169FA97001D797D /* PDTabBarController.m in Sources */,
 				AF05459E21FC0F010003064A /* MSSAutoresizeLabelFlowCell.m in Sources */,
 				0436BD3321B1090200249953 /* PDLocationManager.m in Sources */,
+				CB0D00B122606137002F9749 /* JHDateConvertion.m in Sources */,
 				AFFEA13521E5ED5100704C98 /* ZWPullMenuView.m in Sources */,
 				04C0F7F121A2993100305A78 /* PDBaseModel.m in Sources */,
 				AF0545A721FC11640003064A /* FSPageContentView.m in Sources */,
